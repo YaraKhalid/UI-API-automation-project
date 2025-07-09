@@ -68,20 +68,21 @@ jobs:
           command: |
             cd server
             npm install
-
       - run:
           name: Start mock-user-auth server in background
           command: |
             cd server
             npx babel-node src/server.js &
             sleep 5
-
       - run:
           name: Install Node dependencies for API tests
           command: |
             cd my-auth-API_tests
             npm install
-
+      - run:
+          name: Check server status
+          command: |
+            curl -I http://localhost:3000 || echo "Server not running"
       - run:
           name: Run API tests
           environment:
