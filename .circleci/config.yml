@@ -71,12 +71,12 @@ jobs:
       - run:
           name: Start mock-user-auth server
           command: |
-            rm -rf server   # 🔍 remove if it exists
+            rm -rf server
             git clone https://github.com/thiagoluiznunes/mock-user-auth server
             cd server
             npm install
-            ./node_modules/.bin/babel-node src/app.js &
-             sleep 5
+            npm run dev &
+            sleep 5
       - run:
           name: Install Node dependencies for API tests
           command: |
