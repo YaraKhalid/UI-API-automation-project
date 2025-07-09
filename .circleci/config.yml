@@ -27,6 +27,9 @@ jobs:
             chromedriver --version || echo "chromedriver version check failed"
             find / -name chromedriver 2>/dev/null || echo "No chromedriver found"
       - run:
+          name: Check Chrome version
+          command: google-chrome --version || google-chrome-stable --version
+      - run:
           name: Run homepage search tests
           command: |
             cd MyStoreUI_Test
