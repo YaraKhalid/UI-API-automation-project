@@ -16,10 +16,6 @@ module.exports = {
     console.log('Starting test suite...');
   },
 
-  beforeEach: function (browser) {
-    browser.page.ContactUsPage().navigate().waitForElementVisible('@emailInput', 5000);
-  },
-
   after: function (browser) {
     browser.end();
   },
