@@ -59,23 +59,34 @@ jobs:
       - checkout
 
       - run:
+          name: Clone mock-user-auth API
+          command: |
+            git clone https://github.com/thiagoluiznunes/mock-user-auth server
+
+      - run:
+          name: Install and Build mock-user-auth API
+          command: |
+            cd server
+            npm install
+            npm run build
+
+      - run:
+          name: Start mock-user-auth server in background
+          command: |
+            cd server
+            nohup npm start &   # start.sh script is the correct one per your package.json
+            sleep 5             # wait for server to boot
+
+      - run:
           name: Install Node dependencies for API tests
           command: |
             cd my-auth-API_tests
             npm install
 
       - run:
-          name: Clone and start mock-user-auth server
-          command: |
-            git clone https://github.com/thiagoluiznunes/mock-user-auth server
-            cd server
-            npm install
-            npm run dev 3000 &   # 'dev' script launches server
-            sleep 5               # allow time to boot
-      - run:
           name: Run API tests
           environment:
-            BASE_URL: http://localhost:3000  # ✅ Optional: If your code uses process.env.BASE_URL
+            BASE_URL: http://localhost:3000
           command: |
             cd my-auth-API_tests
             npx mocha test/auth.test.js --reporter mochawesome
