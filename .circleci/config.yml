@@ -3,20 +3,18 @@ version: 2.1
 executors:
   node-executor:
     docker:
-      - image: cimg/node:20.10-browsers
+      - image: cimg/node:20.10-browsers # ✅ Chrome & Chromedriver pre-installed
 
 jobs:
   ui-tests:
     executor: node-executor
     steps:
       - checkout
-
       - run:
           name: Install Node dependencies for UI tests
           command: |
             cd MyStoreUI_Test
             npm install
-
       - run:
           name: Install Google Chrome
           command: |
@@ -26,13 +24,11 @@ jobs:
             echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
             sudo apt-get update
             sudo apt-get install -y google-chrome-stable
-
       - run:
           name: Check Chrome & Chromedriver versions
           command: |
             google-chrome --version || google-chrome-stable --version
             chromedriver --version || echo "chromedriver version check failed"
-
       - run:
           name: Debug Nightwatch config and page objects
           command: |
@@ -40,13 +36,11 @@ jobs:
             ls -la
             pwd
             cat nightwatch.conf.js
-
       - run:
           name: Run homepage search tests
           command: |
             cd MyStoreUI_Test
             npx nightwatch tests/homepageSearchTest.js || true
-
       - run:
           name: Run contact us tests
           command: |
@@ -57,55 +51,36 @@ jobs:
     executor: node-executor
     steps:
       - checkout
-
-      - run:
-          name: Clone mock-user-auth
-          command: |
-            git clone https://github.com/thiagoluiznunes/mock-user-auth server
-
-      - run:
-          name: Install dependencies for mock-user-auth
-          command: |
-            cd server
-            npm install
-            chmod +x scripts/*.sh  # ✅ Make sure scripts are executable
-
-      - run:
-          name: List files in server folder
-          command: |
-            cd server
-            ls -R
-
-      - run:
-          name: Start mock-user-auth server
-          command: |
-            cd server
-            npm run dev &          # ✅ Correctly start the server using the dev script
-            sleep 5                # Give the server time to start
-
-      - run:
-          name: Check server status
-          command: |
-            curl -I http://localhost:3000 || echo "Server not running"
-
-      - run:
-          name: Check mock-user-auth API route
-          command: |
-            curl -i -X POST http://localhost:3000/api/user -H "Content-Type: application/json" -d '{"name":"Yara","password":"123"}'
-
       - run:
           name: Install Node dependencies for API tests
           command: |
             cd my-auth-API_tests
             npm install
-
+      - run:
+          name: Clone and install mock-user-auth server
+          command: |
+            git clone https://github.com/thiagoluiznunes/mock-user-auth.git server
+            cd server
+            npm install
+      - run:
+          name: Start mock-user-auth server
+          command: |
+            cd server
+            npm run dev &
+            echo "Waiting for server to start..."
+            for i in {1..15}; do
+              sleep 2
+              curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/api/v1/users && break
+            done
+      - run:
+          name: Verify server is up
+          command: |
+            curl -I http://localhost:3000/api/v1/users || (echo "Server did not start" && exit 1)
       - run:
           name: Run API tests
-          environment:
-            BASE_URL: http://localhost:3000
           command: |
             cd my-auth-API_tests
-            npx mocha test/auth.test.js --reporter mochawesome
+            BASE_URL=http://localhost:3000 npx mocha test/auth.test.js --reporter mochawesome
 
 workflows:
   version: 2
