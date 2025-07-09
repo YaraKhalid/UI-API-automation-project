@@ -65,7 +65,16 @@ jobs:
             npm install
 
       - run:
+          name: Start mock-user-auth API server
+          command: |
+            cd my-auth-API_tests
+            npm run start &   # ✅ Start your API in the background
+            sleep 5           # ✅ Wait for the server to be ready
+
+      - run:
           name: Run API tests
+          environment:
+            BASE_URL: http://localhost:3000  # ✅ If your tests use process.env.BASE_URL
           command: |
             cd my-auth-API_tests
             npx mocha test/auth.test.js --reporter mochawesome
