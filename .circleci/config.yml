@@ -51,7 +51,7 @@ jobs:
           name: Run contact us tests
           command: |
             cd MyStoreUI_Test
-            npx nightwatch tests/contactUsTest.js --env default
+            npx nightwatch tests/contactUsTest.js --config nightwatch.conf.js
 
   api-tests:
     executor: node-executor
