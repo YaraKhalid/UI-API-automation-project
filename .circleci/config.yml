@@ -11,17 +11,46 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Change directory to UI project
-          command: cd MyStoreUI_Test
-      - run:
           name: Install system dependencies
           command: |
             sudo apt-get update
             sudo apt-get install -y libnss3 libnspr4 libatk1.0-0 libatk-bridge2.0-0 libcups2 libxcomposite1 libxrandr2 libxdamage1 libgbm-dev libpango1.0-0 libasound2 libxshmfence-dev libx11-xcb1 libxss1 fonts-liberation libappindicator3-1 xdg-utils
       - run:
-          name: Install dependencies
+          name: Install Node dependencies for UI tests
           command: |
             cd MyStoreUI_Test
             npm install
       - run:
-          name
+          name: Run homepage search tests
+          command: |
+            cd MyStoreUI_Test
+            npx nightwatch tests/homepageSearchTest.js
+      - run:
+          name: Run contact us tests
+          command: |
+            cd MyStoreUI_Test
+            npx nightwatch tests/contactUsTest.js
+
+  api-tests:
+    executor: node-executor
+    steps:
+      - checkout
+      - run:
+          name: Install Node dependencies for API tests
+          command: |
+            cd my-auth-API_tests
+            npm install
+      - run:
+          name: Run API tests
+          command: |
+            cd my-auth-API_tests
+            npx mocha test/auth.test.js --reporter mochawesome
+
+workflows:
+  version: 2
+  build-and-test:
+    jobs:
+      - ui-tests
+      - api-tests:
+          requires:
+            - ui-tests
