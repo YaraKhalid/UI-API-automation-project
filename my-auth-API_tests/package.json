@@ -1,0 +1,20 @@
+{
+  "name": "my-auth-tests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "mocha": "^11.7.1",
+    "mochawesome": "^7.1.3",
+    "supertest": "^7.1.2"
+  },
+  "dependencies": {
+    "chai": "^4.5.0"
+  }
+}
