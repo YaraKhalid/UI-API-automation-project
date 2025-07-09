@@ -3,7 +3,7 @@ version: 2.1
 executors:
   node-executor:
     docker:
-      - image: cimg/node:20.10-browsers # ✅ Includes Chrome & Chromedriver pre-installed
+      - image: cimg/node:20.10-browsers
 
 jobs:
   ui-tests:
@@ -73,8 +73,7 @@ jobs:
           name: Start mock-user-auth server in background
           command: |
             cd server
-            chmod +x scripts/start.sh
-            ./scripts/start.sh &
+            npx babel-node src/server.js &
             sleep 5
 
       - run:
