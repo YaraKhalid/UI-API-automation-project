@@ -20,7 +20,7 @@ jobs:
           command: |
             cd MyStoreUI_Test
             npm install
-     - run:
+      - run:
           name: Start Chromedriver
           command: |
             chromedriver --port=9515 --url-base=/wd/hub --verbose &
