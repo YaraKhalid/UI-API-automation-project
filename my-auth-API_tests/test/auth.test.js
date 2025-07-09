@@ -5,9 +5,9 @@ const addContext = require('mochawesome/addContext');
 const BASE_URL = 'http://localhost:3000';
 // Valid Data Inputs
 const timestamp = Date.now();
-const name = `user_${timestamp}`;                                          //to always generate a unique name
-const email = `user_${timestamp}@example.com`;                            //to always generate a unique email
-const password = `pass_${Math.random().toString(36).slice(-8)}`;         //to always generate a unique pass
+const name = "Yara_Final";                                          //to always generate a unique name
+const email = "Yara@gmail.com";                            //to always generate a unique email
+const password = "Yara12345";         //to always generate a unique pass
 let token = "";                                                         // Token will be set dynamically after authentication
 // InValid Data Inputs
 const invalidName = "invalidname";                                         
