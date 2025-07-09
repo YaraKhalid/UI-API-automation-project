@@ -57,20 +57,17 @@ jobs:
             cd my-auth-API_tests
             npm install
       - run:
-          name: Clone and install mock-user-auth server
-          command: |
-            git clone https://github.com/thiagoluiznunes/mock-user-auth.git server
-            cd server
-            npm install
-      - run:
           name: Start mock-user-auth server
           command: |
-            cd server
-            npm run dev &
+            npx mock-user-auth start 3000 &
+          background: true
+      - run:
+          name: Wait for server to be ready
+          command: |
             echo "Waiting for server to start..."
             for i in {1..15}; do
               sleep 2
-              curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/api/v1/users && break
+              curl -s -o /dev/null -w "%{http_code}\n" http://localhost:3000/api/v1/users && break
             done
       - run:
           name: Verify server is up
