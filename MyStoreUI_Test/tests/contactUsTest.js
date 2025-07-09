@@ -38,21 +38,21 @@ module.exports = {
   },
 
   'TC3: Submit Contact Form without subject heading': function (browser) {
-    const contactUs = browser.page.ContactUsPage();
+    const contactUs = browser.page.contactUsPage();
     contactUs
       .fillContactForm('', email, message)
       .assertErrorMessage('Please select a subject from the list provided.');
   },
 
   'TC4: Submit Contact Form without message': function (browser) {
-    const contactUs = browser.page.ContactUsPage();
+    const contactUs = browser.page.contactUsPage();
     contactUs
       .fillContactForm(subjectHeading, email, '')
       .assertErrorMessage('The message cannot be blank.');
   },
 
   'TC5: Submit Contact Form with all mandatory fields missing': function (browser) {
-    const contactUs = browser.page.ContactUsPage();
+    const contactUs = browser.page.contactUsPage();
     contactUs
       .fillContactForm('', '', '')
       .assertErrorMessage('Invalid email address.');
@@ -60,28 +60,28 @@ module.exports = {
 
 
   'TC6: Submit Contact Form successfully without file upload': function (browser) {
-    const contactUs = browser.page.ContactUsPage();
+    const contactUs = browser.page.contactUsPage();
     contactUs
       .fillContactForm(subjectHeading, email, message)
       .assertSuccessMessage();
   },
 
   'TC7: Submit Contact Form with minimum letters in message': function (browser) {
-    const contactUs = browser.page.ContactUsPage();
+    const contactUs = browser.page.contactUsPage();
     contactUs
       .fillContactForm(subjectHeading, email, shortMessage)
       .assertSuccessMessage();
   },
 
   'TC8: Submit Contact Form with 50,000 characters in message': function (browser) {
-    const contactUs = browser.page.ContactUsPage();
+    const contactUs = browser.page.contactUsPage();
     contactUs
       .fillContactForm(subjectHeading, email, longMessage)
       .assertSuccessMessage();
   },
 
   'TC9: Submit Contact Form with empty email field': function (browser) {
-    const contactUs = browser.page.ContactUsPage();
+    const contactUs = browser.page.contactUsPage();
     contactUs
       .fillContactForm(subjectHeading, '', message)
       .assertErrorMessage('Invalid email address.');
