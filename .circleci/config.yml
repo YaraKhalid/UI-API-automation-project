@@ -87,6 +87,10 @@ jobs:
           command: |
             curl -I http://localhost:3000 || echo "Server not running"
       - run:
+          name: Check mock-user-auth API route
+          command: |
+            curl -i -X POST http://localhost:3000/api/user -H "Content-Type: application/json" -d '{"name":"Yara","password":"123"}'
+      - run:
           name: Run API tests
           environment:
             BASE_URL: http://localhost:3000
