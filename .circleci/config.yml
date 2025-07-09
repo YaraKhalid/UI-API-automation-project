@@ -62,12 +62,16 @@ jobs:
           name: Clone mock-user-auth
           command: |
             git clone https://github.com/thiagoluiznunes/mock-user-auth server
-
       - run:
           name: Install dependencies for mock-user-auth
           command: |
             cd server
             npm install
+      - run:
+          name: List files in server folder
+          command: |
+            cd server
+            ls -R
       - run:
           name: Start mock-user-auth server
           command: |
