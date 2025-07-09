@@ -1,0 +1,448 @@
+Starting ChromeDriver 138.0.7204.92 (f079b9bc781e3c2adb1496ea1d72812deb0ddb3d-refs/branch-heads/7204_50@{#8}) on port 9515
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 9515.
+[1751667508.000][INFO]: [5813ee4496a49f11ad71525146d520dc] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+         }
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/chromedriver/lib/chromedriver/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/chromedriver/lib/chromedriver/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/chromedriver/lib/chromedriver/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/chromedriver/lib/chromedriver/Chromium.app/Contents/MacOS/Chromium
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Applications/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Applications/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/chromedriver/lib/chromedriver/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Library/Java/JavaVirtualMachines/jdk-11.0.27.jdk/Contents/Home/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /opt/homebrew/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /opt/homebrew/sbin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /usr/local/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /System/Cryptexes/App/usr/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /usr/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /usr/sbin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /sbin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Library/Apple/usr/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Library/Java/JavaVirtualMachines/jdk-11.0.27.jdk/Contents/Home/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/emulator/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/platform-tools/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/emulator/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/platform-tools/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Applications/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Applications/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/chromedriver/lib/chromedriver/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Library/Java/JavaVirtualMachines/jdk-11.0.27.jdk/Contents/Home/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /opt/homebrew/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /opt/homebrew/sbin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /usr/local/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /System/Cryptexes/App/usr/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /usr/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /usr/sbin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /sbin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Library/Apple/usr/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Library/Java/JavaVirtualMachines/jdk-11.0.27.jdk/Contents/Home/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/emulator/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/platform-tools/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/emulator/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/platform-tools/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/chromedriver/lib/chromedriver/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/.bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/node_modules/.bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/node_modules/.bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /Users/node_modules/.bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /node_modules/.bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/.bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /Library/Java/JavaVirtualMachines/jdk-11.0.27.jdk/Contents/Home/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /opt/homebrew/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /opt/homebrew/sbin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /usr/local/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /System/Cryptexes/App/usr/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /usr/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /usr/sbin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /sbin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /Library/Apple/usr/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /Library/Java/JavaVirtualMachines/jdk-11.0.27.jdk/Contents/Home/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/emulator/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/platform-tools/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/emulator/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/platform-tools/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Applications/Chromium.app/Contents/MacOS/Chromium
+[1751667508.000][INFO]: Browser search. Trying... /Applications/Chromium.app/Contents/MacOS/Chromium
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/chromedriver/lib/chromedriver/Chromium.app/Contents/MacOS/Chromium
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/.bin/Chromium.app/Contents/MacOS/Chromium
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/node_modules/.bin/Chromium.app/Contents/MacOS/Chromium
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/node_modules/.bin/Chromium.app/Contents/MacOS/Chromium
+[1751667508.000][INFO]: Browser search. Trying... /Users/node_modules/.bin/Chromium.app/Contents/MacOS/Chromium
+[1751667508.000][INFO]: Browser search. Trying... /node_modules/.bin/Chromium.app/Contents/MacOS/Chromium
+[1751667508.000][INFO]: Browser search. Trying... /usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/Chromium.app/Contents/MacOS/Chromium
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/.bin/Chromium.app/Contents/MacOS/Chromium
+[1751667508.000][INFO]: Browser search. Trying... /Library/Java/JavaVirtualMachines/jdk-11.0.27.jdk/Contents/Home/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667508.000][INFO]: Browser search. Trying... /opt/homebrew/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667508.000][INFO]: Browser search. Trying... /opt/homebrew/sbin/Chromium.app/Contents/MacOS/Chromium
+[1751667508.000][INFO]: Browser search. Trying... /usr/local/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667508.000][INFO]: Browser search. Trying... /System/Cryptexes/App/usr/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667508.000][INFO]: Browser search. Trying... /usr/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667508.000][INFO]: Browser search. Trying... /bin/Chromium.app/Contents/MacOS/Chromium
+[1751667508.000][INFO]: Browser search. Trying... /usr/sbin/Chromium.app/Contents/MacOS/Chromium
+[1751667508.000][INFO]: Browser search. Trying... /sbin/Chromium.app/Contents/MacOS/Chromium
+[1751667508.000][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667508.000][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667508.000][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667508.000][INFO]: Browser search. Trying... /Library/Apple/usr/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667508.000][INFO]: Browser search. Trying... /Library/Java/JavaVirtualMachines/jdk-11.0.27.jdk/Contents/Home/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/emulator/Chromium.app/Contents/MacOS/Chromium
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/platform-tools/Chromium.app/Contents/MacOS/Chromium
+[1751667508.000][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/Chromium.app/Contents/MacOS/Chromium
+[1751667508.001][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667508.001][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/emulator/Chromium.app/Contents/MacOS/Chromium
+[1751667508.001][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/platform-tools/Chromium.app/Contents/MacOS/Chromium
+[1751667508.001][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/Chromium.app/Contents/MacOS/Chromium
+[1751667508.001][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667508.001][INFO]: Browser search. Not found.
+[1751667508.001][INFO]: [5813ee4496a49f11ad71525146d520dc] RESPONSE InitSession ERROR session not created
+from unknown error: cannot find Chrome binary
+[1751667508.001][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1751667508.001][DEBUG]: Log type 'browser' lost 0 entries on destruction
+[1751667509.008][INFO]: [c990b20bccbf2e6a7476482bbd86f835] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+         }
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1751667509.008][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/chromedriver/lib/chromedriver/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.008][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/chromedriver/lib/chromedriver/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.008][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/chromedriver/lib/chromedriver/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.008][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/chromedriver/lib/chromedriver/Chromium.app/Contents/MacOS/Chromium
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Applications/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Applications/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/chromedriver/lib/chromedriver/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Library/Java/JavaVirtualMachines/jdk-11.0.27.jdk/Contents/Home/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /opt/homebrew/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /opt/homebrew/sbin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /usr/local/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /System/Cryptexes/App/usr/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /usr/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /usr/sbin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /sbin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Library/Apple/usr/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Library/Java/JavaVirtualMachines/jdk-11.0.27.jdk/Contents/Home/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/emulator/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/platform-tools/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/emulator/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/platform-tools/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Applications/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Applications/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/chromedriver/lib/chromedriver/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Library/Java/JavaVirtualMachines/jdk-11.0.27.jdk/Contents/Home/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /opt/homebrew/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /opt/homebrew/sbin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /usr/local/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /System/Cryptexes/App/usr/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /usr/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /usr/sbin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /sbin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Library/Apple/usr/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Library/Java/JavaVirtualMachines/jdk-11.0.27.jdk/Contents/Home/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/emulator/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/platform-tools/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/emulator/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/platform-tools/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.009][INFO]: Browser search. Trying... /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/chromedriver/lib/chromedriver/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/.bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/node_modules/.bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/node_modules/.bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.009][INFO]: Browser search. Trying... /Users/node_modules/.bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.009][INFO]: Browser search. Trying... /node_modules/.bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.009][INFO]: Browser search. Trying... /usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/.bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.009][INFO]: Browser search. Trying... /Library/Java/JavaVirtualMachines/jdk-11.0.27.jdk/Contents/Home/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.009][INFO]: Browser search. Trying... /opt/homebrew/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.009][INFO]: Browser search. Trying... /opt/homebrew/sbin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.009][INFO]: Browser search. Trying... /usr/local/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.009][INFO]: Browser search. Trying... /System/Cryptexes/App/usr/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.009][INFO]: Browser search. Trying... /usr/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.009][INFO]: Browser search. Trying... /bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.009][INFO]: Browser search. Trying... /usr/sbin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.009][INFO]: Browser search. Trying... /sbin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.009][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.009][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.009][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.009][INFO]: Browser search. Trying... /Library/Apple/usr/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.009][INFO]: Browser search. Trying... /Library/Java/JavaVirtualMachines/jdk-11.0.27.jdk/Contents/Home/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/emulator/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/platform-tools/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.009][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.010][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.010][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/emulator/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.010][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/platform-tools/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.010][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.010][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667509.010][INFO]: Browser search. Trying... /Users/yara.sayed1/Applications/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /Applications/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/chromedriver/lib/chromedriver/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/.bin/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/node_modules/.bin/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /Users/yara.sayed1/node_modules/.bin/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /Users/node_modules/.bin/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /node_modules/.bin/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/.bin/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /Library/Java/JavaVirtualMachines/jdk-11.0.27.jdk/Contents/Home/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /opt/homebrew/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /opt/homebrew/sbin/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /usr/local/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /System/Cryptexes/App/usr/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /usr/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /bin/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /usr/sbin/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /sbin/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /Library/Apple/usr/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /Library/Java/JavaVirtualMachines/jdk-11.0.27.jdk/Contents/Home/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/emulator/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/platform-tools/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/emulator/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/platform-tools/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667509.010][INFO]: Browser search. Not found.
+[1751667509.010][INFO]: [c990b20bccbf2e6a7476482bbd86f835] RESPONSE InitSession ERROR session not created
+from unknown error: cannot find Chrome binary
+[1751667509.010][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1751667509.010][DEBUG]: Log type 'browser' lost 0 entries on destruction
+[1751667510.018][INFO]: [537c1155e48d55cec2cbb8c15c3fe484] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+         }
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1751667510.018][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/chromedriver/lib/chromedriver/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.018][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/chromedriver/lib/chromedriver/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.018][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/chromedriver/lib/chromedriver/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.018][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/chromedriver/lib/chromedriver/Chromium.app/Contents/MacOS/Chromium
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Applications/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Applications/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/chromedriver/lib/chromedriver/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Library/Java/JavaVirtualMachines/jdk-11.0.27.jdk/Contents/Home/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /opt/homebrew/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /opt/homebrew/sbin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /usr/local/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /System/Cryptexes/App/usr/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /usr/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /usr/sbin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /sbin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Library/Apple/usr/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Library/Java/JavaVirtualMachines/jdk-11.0.27.jdk/Contents/Home/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/emulator/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/platform-tools/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/emulator/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/platform-tools/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Applications/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Applications/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/chromedriver/lib/chromedriver/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/.bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Library/Java/JavaVirtualMachines/jdk-11.0.27.jdk/Contents/Home/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /opt/homebrew/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /opt/homebrew/sbin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /usr/local/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /System/Cryptexes/App/usr/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /usr/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /usr/sbin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /sbin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Library/Apple/usr/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Library/Java/JavaVirtualMachines/jdk-11.0.27.jdk/Contents/Home/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/emulator/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/platform-tools/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/emulator/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/platform-tools/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/bin/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.019][INFO]: Browser search. Trying... /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/chromedriver/lib/chromedriver/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/.bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/node_modules/.bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/node_modules/.bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.019][INFO]: Browser search. Trying... /Users/node_modules/.bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.019][INFO]: Browser search. Trying... /node_modules/.bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.019][INFO]: Browser search. Trying... /usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.019][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/.bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.019][INFO]: Browser search. Trying... /Library/Java/JavaVirtualMachines/jdk-11.0.27.jdk/Contents/Home/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.019][INFO]: Browser search. Trying... /opt/homebrew/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.019][INFO]: Browser search. Trying... /opt/homebrew/sbin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.019][INFO]: Browser search. Trying... /usr/local/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.019][INFO]: Browser search. Trying... /System/Cryptexes/App/usr/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.019][INFO]: Browser search. Trying... /usr/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.019][INFO]: Browser search. Trying... /bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.019][INFO]: Browser search. Trying... /usr/sbin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.019][INFO]: Browser search. Trying... /sbin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.019][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.019][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.020][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.020][INFO]: Browser search. Trying... /Library/Apple/usr/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.020][INFO]: Browser search. Trying... /Library/Java/JavaVirtualMachines/jdk-11.0.27.jdk/Contents/Home/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.020][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/emulator/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.020][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/platform-tools/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.020][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.020][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.020][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/emulator/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.020][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/platform-tools/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.020][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.020][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/bin/Google Chrome.app/Contents/MacOS/Google Chrome
+[1751667510.020][INFO]: Browser search. Trying... /Users/yara.sayed1/Applications/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /Applications/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/chromedriver/lib/chromedriver/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/.bin/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/node_modules/.bin/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /Users/yara.sayed1/node_modules/.bin/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /Users/node_modules/.bin/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /node_modules/.bin/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /Users/yara.sayed1/Documents/MyStore/node_modules/.bin/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /Library/Java/JavaVirtualMachines/jdk-11.0.27.jdk/Contents/Home/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /opt/homebrew/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /opt/homebrew/sbin/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /usr/local/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /System/Cryptexes/App/usr/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /usr/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /bin/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /usr/sbin/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /sbin/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /Library/Apple/usr/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /Library/Java/JavaVirtualMachines/jdk-11.0.27.jdk/Contents/Home/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/emulator/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/platform-tools/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/emulator/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/platform-tools/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Trying... /Users/yara.sayed1/Library/Android/sdk/tools/bin/Chromium.app/Contents/MacOS/Chromium
+[1751667510.020][INFO]: Browser search. Not found.
+[1751667510.020][INFO]: [537c1155e48d55cec2cbb8c15c3fe484] RESPONSE InitSession ERROR session not created
+from unknown error: cannot find Chrome binary
+[1751667510.020][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1751667510.020][DEBUG]: Log type 'browser' lost 0 entries on destruction

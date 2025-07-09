@@ -1,0 +1,418 @@
+1751667421543	geckodriver	INFO	Listening on 127.0.0.1:4444
+1751667421544	webdriver::server	TRACE	Build standard route for /status
+1751667421544	webdriver::server	TRACE	Build standard route for /session
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/url
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/url
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/back
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/forward
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/refresh
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/title
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/source
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/window
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/window/handles
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/window/new
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/window
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/window/size
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/window/size
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/window/position
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/window/position
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/window/rect
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/window/rect
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/window/minimize
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/window/maximize
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/window/fullscreen
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/window
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/frame
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/frame/parent
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/element
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/element/{elementId}/element
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/elements
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/element/{elementId}/elements
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/shadow/{shadowId}/element
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/shadow/{shadowId}/elements
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/element/active
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/element/{elementId}/shadow
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/element/{elementId}/displayed
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/element/{elementId}/selected
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/element/{elementId}/attribute/{name}
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/element/{elementId}/property/{name}
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/element/{elementId}/css/{propertyName}
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/element/{elementId}/text
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/element/{elementId}/computedlabel
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/element/{elementId}/computedrole
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/element/{elementId}/name
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/element/{elementId}/rect
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/element/{elementId}/enabled
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/execute/sync
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/execute/async
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/cookie
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/cookie/{name}
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/cookie
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/cookie
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/cookie/{name}
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/timeouts
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/timeouts
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/element/{elementId}/click
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/element/{elementId}/clear
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/element/{elementId}/value
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/alert/dismiss
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/alert/accept
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/alert/text
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/alert/text
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/screenshot
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/element/{elementId}/screenshot
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/actions
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/actions
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/permissions
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/print
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/webauthn/authenticator
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/webauthn/authenticator/{authenticatorId}
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/webauthn/authenticator/{authenticatorId}/credential
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/webauthn/authenticator/{authenticatorId}/credentials
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/webauthn/authenticator/{authenticatorId}/credentials/{credentialId}
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/webauthn/authenticator/{authenticatorId}/credentials
+1751667421544	webdriver::server	TRACE	Build standard route for /session/{sessionId}/webauthn/authenticator/{authenticatorId}/uv
+1751667421544	webdriver::server	TRACE	Build vendor route for /session/{sessionId}/moz/context
+1751667421544	webdriver::server	TRACE	Build vendor route for /session/{sessionId}/moz/context
+1751667421544	webdriver::server	TRACE	Build vendor route for /session/{sessionId}/moz/addon/install
+1751667421544	webdriver::server	TRACE	Build vendor route for /session/{sessionId}/moz/addon/uninstall
+1751667421544	webdriver::server	TRACE	Build vendor route for /session/{sessionId}/moz/screenshot/full
+1751667421555	webdriver::server	DEBUG	-> GET /status 
+1751667421556	webdriver::server	DEBUG	<- 200 OK {"value":{"message":"","ready":true}}
+1751667421561	webdriver::server	DEBUG	-> POST /session {"capabilities":{"firstMatch":[{}],"alwaysMatch":{"browserName":"firefox","moz:firefoxOptions":{"prefs":{"re ... -protocols":3},"binary":"/Users/yara.sayed1/.cache/selenium/firefox/mac-arm64/140.0.2/Firefox.app/Contents/MacOS/firefox"}}}}
+1751667421561	geckodriver::capabilities	DEBUG	Trying to read firefox version from ini files
+1751667421564	geckodriver::capabilities	DEBUG	Found version 140.0.2
+1751667421569	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" "/Users/yara.sayed1/.ca ... "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/0d/91mypxgd4fx58p2j50vyxdfr0000gp/T/rust_mozprofileu92qtT"
+1751667421569	geckodriver::marionette	DEBUG	Waiting 60s to connect to browser on 127.0.0.1
+1751667421569	geckodriver::browser	TRACE	Failed to open /var/folders/0d/91mypxgd4fx58p2j50vyxdfr0000gp/T/rust_mozprofileu92qtT/MarionetteActivePort
+1751667421569	geckodriver::marionette	TRACE	Retrying in 100ms
+1751667421674	geckodriver::browser	TRACE	Failed to open /var/folders/0d/91mypxgd4fx58p2j50vyxdfr0000gp/T/rust_mozprofileu92qtT/MarionetteActivePort
+1751667421674	geckodriver::marionette	TRACE	Retrying in 100ms
+1751667421779	geckodriver::browser	TRACE	Failed to open /var/folders/0d/91mypxgd4fx58p2j50vyxdfr0000gp/T/rust_mozprofileu92qtT/MarionetteActivePort
+1751667421779	geckodriver::marionette	TRACE	Retrying in 100ms
+1751667421883	geckodriver::browser	TRACE	Failed to open /var/folders/0d/91mypxgd4fx58p2j50vyxdfr0000gp/T/rust_mozprofileu92qtT/MarionetteActivePort
+1751667421883	geckodriver::marionette	TRACE	Retrying in 100ms
+1751667421985	geckodriver::browser	TRACE	Failed to open /var/folders/0d/91mypxgd4fx58p2j50vyxdfr0000gp/T/rust_mozprofileu92qtT/MarionetteActivePort
+1751667421985	geckodriver::marionette	TRACE	Retrying in 100ms
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1751667422091	geckodriver::browser	TRACE	Failed to open /var/folders/0d/91mypxgd4fx58p2j50vyxdfr0000gp/T/rust_mozprofileu92qtT/MarionetteActivePort
+1751667422091	geckodriver::marionette	TRACE	Retrying in 100ms
+1751667422105	Marionette	INFO	Marionette enabled
+1751667422105	RemoteAgent	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1751667422105	RemoteAgent	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1751667422105	RemoteAgent	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1751667422105	RemoteAgent	DEBUG	Setting recommended pref browser.http.blank_page_with_error_response.enabled to true
+1751667422105	RemoteAgent	DEBUG	Setting recommended pref browser.newtabpage.activity-stream.discoverystream.region-weather-config to 
+1751667422105	RemoteAgent	DEBUG	Setting recommended pref browser.newtabpage.activity-stream.newtabWallpapers.enabled to false
+1751667422105	RemoteAgent	DEBUG	Setting recommended pref browser.newtabpage.activity-stream.showSponsoredTopSites to false
+1751667422105	RemoteAgent	DEBUG	Setting recommended pref browser.newtabpage.enabled to false
+1751667422105	RemoteAgent	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1751667422105	RemoteAgent	DEBUG	Setting recommended pref browser.region.network.url to 
+1751667422105	RemoteAgent	DEBUG	Setting recommended pref browser.safebrowsing.blockedURIs.enabled to false
+1751667422105	RemoteAgent	DEBUG	Setting recommended pref browser.safebrowsing.downloads.enabled to false
+1751667422105	RemoteAgent	DEBUG	Setting recommended pref browser.safebrowsing.malware.enabled to false
+1751667422105	RemoteAgent	DEBUG	Setting recommended pref browser.safebrowsing.phishing.enabled to false
+1751667422105	RemoteAgent	DEBUG	Setting recommended pref browser.search.update to false
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref browser.startup.couldRestoreSession.count to -1
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.remote.unloadDelayMs to 0
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.unloadOnLowMemory to false
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnClose to false
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnOpen to false
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref browser.toolbars.bookmarks.visibility to never
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref browser.topsites.contile.enabled to false
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref browser.usedOnWindows10.introURL to 
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref browser.urlbar.merino.endpointURL to 
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref dom.disable_open_during_load to false
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref dom.file.createInChild to true
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref dom.input_events.security.minNumTicks to 0
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref dom.input_events.security.minTimeElapsedInMS to 0
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref threads.lower_mainthread_priority_in_background.enabled to false
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref dom.ipc.processPriorityManager.enabled to false
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref dom.max_chrome_script_run_time to 0
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref dom.max_script_run_time to 0
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref dom.navigation.navigationRateLimit.count to 0
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref dom.push.connection.enabled to false
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref dom.screenorientation.allow-lock to true
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref dom.successive_dialog_time_limit to 0
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.discovery.api_url to data:, 
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref extensions.blocklist.detailsURL to http://%(server)s/extensions-dummy/blocklistDetailsURL
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref extensions.blocklist.itemURL to http://%(server)s/extensions-dummy/blocklistItemURL
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref extensions.hotfix.url to http://%(server)s/extensions-dummy/hotfixURL
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref extensions.systemAddon.update.enabled to false
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref extensions.update.background.url to http://%(server)s/extensions-dummy/updateBackgroundURL
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref extensions.update.url to http://%(server)s/extensions-dummy/updateURL
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.get.url to http://%(server)s/extensions-dummy/repositoryGetURL
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.search.browseURL to http://%(server)s/extensions-dummy/repositoryBrowseURL
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref geo.provider.network.url to 
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref identity.fxaccounts.auth.uri to https://{server}/dummy/fxa
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref network.connectivity-service.enabled to false
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref network.http.phishy-userpass-length to 255
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref privacy.trackingprotection.enabled to false
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref remote.prefs.recommended.applied to true
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref security.fileuri.strict_origin_policy to false
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref security.remote_settings.intermediates.enabled to false
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref services.settings.loglevel to off
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref signon.autofillForms to false
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref signon.rememberSignons to false
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref toolkit.telemetry.server to https://%(server)s/telemetry-dummy/
+1751667422106	RemoteAgent	DEBUG	Setting recommended pref widget.windows.window_occlusion_tracking.enabled to false
+1751667422192	geckodriver::browser	TRACE	Failed to open /var/folders/0d/91mypxgd4fx58p2j50vyxdfr0000gp/T/rust_mozprofileu92qtT/MarionetteActivePort
+1751667422192	geckodriver::marionette	TRACE	Retrying in 100ms
+1751667422236	Marionette	TRACE	Received observer notification final-ui-startup
+1751667422295	Marionette	INFO	Listening on port 60481
+1751667422295	geckodriver::browser	TRACE	Failed to open /var/folders/0d/91mypxgd4fx58p2j50vyxdfr0000gp/T/rust_mozprofileu92qtT/MarionetteActivePort
+1751667422295	geckodriver::marionette	TRACE	Retrying in 100ms
+1751667422296	Marionette	DEBUG	Marionette is listening
+Read port: 60481
+1751667422417	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:60482
+1751667422424	geckodriver::marionette	DEBUG	Connection to Marionette established on 127.0.0.1:60481.
+1751667422437	Marionette	DEBUG	0 -> [0,1,"WebDriver:NewSession",{"browserName":"firefox"}]
+1751667422438	Marionette	DEBUG	Waiting for initial application window
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.error: CustomizableUI: 
+  Could not localize property 'fxms-bmb-button.tooltiptext'.
+1751667423109	Marionette	TRACE	Received observer notification browser-idle-startup-tasks-finished
+1751667423112	RemoteAgent	TRACE	[10] ProgressListener Start: expectNavigation=false resolveWhenStarted=false unloadTimeout=5000 waitForExplicitStart=false
+1751667423112	RemoteAgent	TRACE	[10] ProgressListener Setting unload timer (5000ms)
+1751667423113	RemoteAgent	TRACE	[10] Wait for initial navigation: isInitial=false, isLoadingDocument=false
+1751667423113	RemoteAgent	TRACE	[10] Document already finished loading: about:blank
+1751667423113	RemoteAgent	TRACE	[10] ProgressListener Stop: has error=false url=about:blank
+1751667423117	Marionette	DEBUG	0 <- [1,1,null,{"sessionId":"c277b2e0-9b45-4083-93f4-b07dff030842","capabilities":{"acceptInsecureCerts":false,"browserName":"firefox","browserVersion":"140.0.2","platformName":"mac","unhandledPromptBehavior":"dismiss and notify","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0","moz:buildID":"20250627085530","moz:headless":false,"moz:platformVersion":"24.5.0","moz:processID":37374,"moz:profile":"/var/folders/0d/91mypxgd4fx58p2j50vyxdfr0000gp/T/rust_mozprofileu92qtT","moz:shutdownTimeout":60000,"pageLoadStrategy":"normal","timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"setWindowRect":true,"strictFileInteractability":false,"moz:accessibilityChecks":false,"moz:webdriverClick":true,"moz:windowless":false,"proxy":{}}}]
+1751667423119	webdriver::server	DEBUG	<- 200 OK {"value":{"sessionId":"c277b2e0-9b45-4083-93f4-b07dff030842","capabilities":{"acceptInsecureCerts":false,"browserNa ... r":"dismiss and notify","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0"}}}
+1751667423128	webdriver::server	DEBUG	-> DELETE /session/c277b2e0-9b45-4083-93f4-b07dff030842 
+1751667423128	Marionette	DEBUG	0 -> [0,2,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1751667423129	Marionette	INFO	Stopped listening on port 60481
+1751667423360	Marionette	TRACE	Received observer notification quit-application
+1751667423361	Marionette	TRACE	Received observer notification quit-application
+1751667423361	RemoteAgent	DEBUG	Resetting recommended pref apz.content_response_timeout
+1751667423361	RemoteAgent	DEBUG	Resetting recommended pref browser.contentblocking.introCount
+1751667423361	RemoteAgent	DEBUG	Resetting recommended pref browser.download.panel.shown
+1751667423362	RemoteAgent	DEBUG	Resetting recommended pref browser.http.blank_page_with_error_response.enabled
+1751667423362	RemoteAgent	DEBUG	Resetting recommended pref browser.newtabpage.activity-stream.discoverystream.region-weather-config
+1751667423362	RemoteAgent	DEBUG	Resetting recommended pref browser.newtabpage.activity-stream.newtabWallpapers.enabled
+1751667423362	RemoteAgent	DEBUG	Resetting recommended pref browser.newtabpage.activity-stream.showSponsoredTopSites
+1751667423362	RemoteAgent	DEBUG	Resetting recommended pref browser.newtabpage.enabled
+1751667423363	RemoteAgent	DEBUG	Resetting recommended pref browser.pagethumbnails.capturing_disabled
+1751667423363	RemoteAgent	DEBUG	Resetting recommended pref browser.region.network.url
+1751667423363	RemoteAgent	DEBUG	Resetting recommended pref browser.safebrowsing.blockedURIs.enabled
+1751667423364	RemoteAgent	DEBUG	Resetting recommended pref browser.safebrowsing.downloads.enabled
+1751667423365	RemoteAgent	DEBUG	Resetting recommended pref browser.safebrowsing.malware.enabled
+1751667423366	RemoteAgent	DEBUG	Resetting recommended pref browser.safebrowsing.phishing.enabled
+1751667423367	RemoteAgent	DEBUG	Resetting recommended pref browser.search.update
+1751667423367	RemoteAgent	DEBUG	Resetting recommended pref browser.startup.couldRestoreSession.count
+1751667423367	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.remote.unloadDelayMs
+1751667423367	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.unloadOnLowMemory
+1751667423367	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnClose
+1751667423367	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnCloseOtherTabs
+1751667423367	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnOpen
+1751667423367	RemoteAgent	DEBUG	Resetting recommended pref browser.toolbars.bookmarks.visibility
+1751667423367	RemoteAgent	DEBUG	Resetting recommended pref browser.topsites.contile.enabled
+1751667423367	RemoteAgent	DEBUG	Resetting recommended pref browser.usedOnWindows10.introURL
+1751667423367	RemoteAgent	DEBUG	Resetting recommended pref browser.urlbar.merino.endpointURL
+1751667423368	RemoteAgent	DEBUG	Resetting recommended pref browser.urlbar.suggest.searches
+1751667423368	RemoteAgent	DEBUG	Resetting recommended pref datareporting.policy.dataSubmissionPolicyAccepted
+1751667423368	RemoteAgent	DEBUG	Resetting recommended pref dom.disable_open_during_load
+1751667423368	RemoteAgent	DEBUG	Resetting recommended pref dom.file.createInChild
+1751667423368	RemoteAgent	DEBUG	Resetting recommended pref dom.input_events.security.minNumTicks
+1751667423368	RemoteAgent	DEBUG	Resetting recommended pref dom.input_events.security.minTimeElapsedInMS
+1751667423368	RemoteAgent	DEBUG	Resetting recommended pref threads.lower_mainthread_priority_in_background.enabled
+1751667423369	RemoteAgent	DEBUG	Resetting recommended pref dom.ipc.processPriorityManager.enabled
+1751667423369	RemoteAgent	DEBUG	Resetting recommended pref dom.max_chrome_script_run_time
+1751667423369	RemoteAgent	DEBUG	Resetting recommended pref dom.max_script_run_time
+1751667423369	RemoteAgent	DEBUG	Resetting recommended pref dom.navigation.navigationRateLimit.count
+1751667423369	RemoteAgent	DEBUG	Resetting recommended pref dom.push.connection.enabled
+1751667423369	RemoteAgent	DEBUG	Resetting recommended pref dom.screenorientation.allow-lock
+1751667423369	RemoteAgent	DEBUG	Resetting recommended pref dom.successive_dialog_time_limit
+1751667423369	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.cache.enabled
+1751667423369	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.discovery.api_url
+1751667423369	RemoteAgent	DEBUG	Resetting recommended pref extensions.blocklist.detailsURL
+1751667423369	RemoteAgent	DEBUG	Resetting recommended pref extensions.blocklist.itemURL
+1751667423369	RemoteAgent	DEBUG	Resetting recommended pref extensions.hotfix.url
+1751667423369	RemoteAgent	DEBUG	Resetting recommended pref extensions.systemAddon.update.enabled
+1751667423369	RemoteAgent	DEBUG	Resetting recommended pref extensions.update.background.url
+1751667423369	RemoteAgent	DEBUG	Resetting recommended pref extensions.update.url
+1751667423369	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.get.url
+1751667423369	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.search.browseURL
+1751667423369	RemoteAgent	DEBUG	Resetting recommended pref geo.provider.network.url
+1751667423369	RemoteAgent	DEBUG	Resetting recommended pref identity.fxaccounts.auth.uri
+1751667423369	RemoteAgent	DEBUG	Resetting recommended pref network.connectivity-service.enabled
+1751667423369	RemoteAgent	DEBUG	Resetting recommended pref network.http.phishy-userpass-length
+1751667423370	RemoteAgent	DEBUG	Resetting recommended pref network.http.prompt-temp-redirect
+1751667423370	RemoteAgent	DEBUG	Resetting recommended pref privacy.trackingprotection.enabled
+1751667423370	RemoteAgent	DEBUG	Resetting recommended pref remote.prefs.recommended.applied
+1751667423370	RemoteAgent	DEBUG	Resetting recommended pref security.fileuri.strict_origin_policy
+1751667423370	RemoteAgent	DEBUG	Resetting recommended pref security.notification_enable_delay
+1751667423370	RemoteAgent	DEBUG	Resetting recommended pref security.remote_settings.intermediates.enabled
+1751667423370	RemoteAgent	DEBUG	Resetting recommended pref services.settings.loglevel
+1751667423370	RemoteAgent	DEBUG	Resetting recommended pref signon.autofillForms
+1751667423370	RemoteAgent	DEBUG	Resetting recommended pref signon.rememberSignons
+1751667423370	RemoteAgent	DEBUG	Resetting recommended pref toolkit.telemetry.server
+1751667423370	RemoteAgent	DEBUG	Resetting recommended pref widget.windows.window_occlusion_tracking.enabled
+1751667423376	Marionette	DEBUG	0 <- [1,2,null,{"cause":"shutdown","forced":false,"in_app":true}]
+1751667423391	Marionette	DEBUG	Marionette stopped listening
+1751667423392	webdriver::server	DEBUG	Teardown session
+1751667423392	geckodriver::marionette	DEBUG	To store minidump files of Firefox crashes the MINIDUMP_SAVE_PATH environment variable needs to be set.
+console.error: "Failed to fetch https://ads.mozilla.org/v1/delete_user:" "NetworkError when attempting to fetch resource."
+1751667423395	Marionette	DEBUG	Closed connection 0
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+console.error: services.settings: 
+  main/nimbus-desktop-experiments: Signature of bundled changeset is invalid: [Exception... "<no message>"  nsresult: "0x8046001e (<unknown>)"  location: "JS frame :: resource://gre/modules/ServiceRequest.sys.mjs :: open :: line 126"  data: no].
+console.error: services.settings: 
+  main/url-classifier-exceptions: Signature of bundled changeset is invalid: [Exception... "<no message>"  nsresult: "0x8046001e (<unknown>)"  location: "JS frame :: resource://gre/modules/ServiceRequest.sys.mjs :: open :: line 126"  data: no].
+console.error: services.settings: 
+  main/tracking-protection-lists: Signature of bundled changeset is invalid: [Exception... "<no message>"  nsresult: "0x8046001e (<unknown>)"  location: "JS frame :: resource://gre/modules/ServiceRequest.sys.mjs :: open :: line 126"  data: no].
+console.error: services.settings: 
+  main/doh-config: Signature of bundled changeset is invalid: [Exception... "<no message>"  nsresult: "0x8046001e (<unknown>)"  location: "JS frame :: resource://gre/modules/ServiceRequest.sys.mjs :: open :: line 126"  data: no].
+console.error: services.settings: 
+  main/fingerprinting-protection-overrides: Signature of bundled changeset is invalid: [Exception... "<no message>"  nsresult: "0x8046001e (<unknown>)"  location: "JS frame :: resource://gre/modules/ServiceRequest.sys.mjs :: open :: line 126"  data: no].
+console.error: services.settings: 
+  main/partitioning-exempt-urls: Signature of bundled changeset is invalid: [Exception... "<no message>"  nsresult: "0x8046001e (<unknown>)"  location: "JS frame :: resource://gre/modules/ServiceRequest.sys.mjs :: open :: line 126"  data: no].
+console.error: services.settings: 
+  main/cfr: Signature of bundled changeset is invalid: [Exception... "<no message>"  nsresult: "0x8046001e (<unknown>)"  location: "JS frame :: resource://gre/modules/ServiceRequest.sys.mjs :: open :: line 126"  data: no].
+console.error: services.settings: 
+  main/nimbus-secure-experiments: Signature of bundled changeset is invalid: [Exception... "<no message>"  nsresult: "0x8046001e (<unknown>)"  location: "JS frame :: resource://gre/modules/ServiceRequest.sys.mjs :: open :: line 126"  data: no].
+console.error: services.settings: 
+  main/newtab-wallpapers-v2: Signature of bundled changeset is invalid: [Exception... "<no message>"  nsresult: "0x8046001e (<unknown>)"  location: "JS frame :: resource://gre/modules/ServiceRequest.sys.mjs :: open :: line 126"  data: no].
+console.error: services.settings: 
+  main/normandy-recipes-capabilities: Signature of bundled changeset is invalid: [Exception... "<no message>"  nsresult: "0x8046001e (<unknown>)"  location: "JS frame :: resource://gre/modules/ServiceRequest.sys.mjs :: open :: line 126"  data: no].
+console.error: services.settings: 
+  main/remote-permissions: Signature of bundled changeset is invalid: [Exception... "<no message>"  nsresult: "0x8046001e (<unknown>)"  location: "JS frame :: resource://gre/modules/ServiceRequest.sys.mjs :: open :: line 126"  data: no].
+console.error: services.settings: 
+  main/search-categorization: Signature of bundled changeset is invalid: [Exception... "<no message>"  nsresult: "0x8046001e (<unknown>)"  location: "JS frame :: resource://gre/modules/ServiceRequest.sys.mjs :: open :: line 126"  data: no].
+console.error: services.settings: 
+  main/third-party-cookie-blocking-exempt-urls: Signature of bundled changeset is invalid: [Exception... "<no message>"  nsresult: "0x8046001e (<unknown>)"  location: "JS frame :: resource://gre/modules/ServiceRequest.sys.mjs :: open :: line 126"  data: no].
+console.error: services.settings: 
+  main/message-groups: Signature of bundled changeset is invalid: [Exception... "<no message>"  nsresult: "0x8046001e (<unknown>)"  location: "JS frame :: resource://gre/modules/ServiceRequest.sys.mjs :: open :: line 126"  data: no].
+console.error: services.settings: 
+  main/query-stripping: Signature of bundled changeset is invalid: [Exception... "<no message>"  nsresult: "0x8046001e (<unknown>)"  location: "JS frame :: resource://gre/modules/ServiceRequest.sys.mjs :: open :: line 126"  data: no].
+console.error: services.settings: 
+  main/doh-providers: Signature of bundled changeset is invalid: [Exception... "<no message>"  nsresult: "0x8046001e (<unknown>)"  location: "JS frame :: resource://gre/modules/ServiceRequest.sys.mjs :: open :: line 126"  data: no].
+console.error: services.settings: 
+Object
+  - prototype Object
+    - columnNumber = 0
+    - data = null
+    - filename = resource://gre/modules/ServiceRequest.sys.mjs
+    - lineNumber = 126
+    - location = {"name":"open","filename":"resource://gre/modules/ServiceRequest.sys.mjs","sourceId":25,"lineNumber":126,"columnNumber":11,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetch/<","sourceId":24,"lineNumber":268,"columnNumber":15,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetch","sourceId":24,"lineNumber":219,"columnNumber":12,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetchLatestChanges","sourceId":24,"lineNumber":429,"columnNumber":34,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/RemoteSettingsClient.sys.mjs","name":"sync","sourceId":22,"lineNumber":630,"columnNumber":42,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/RemoteSettingsClient.sys.mjs","name":"get/this._importingPromise<","sourceId":22,"lineNumber":482,"columnNumber":28,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://gre/modules/AsyncShutdown.sys.mjs","name":"observe","sourceId":15,"lineNumber":569,"columnNumber":17,"asyncCause":null,"asyncCaller":null,"caller":null,"formattedStack":"observe@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"get/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"sync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"fetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"fetch@resource://services-settings/Utils.sys.mjs:219:12\nfetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"fetch/<@resource://services-settings/Utils.sys.mjs:268:15\nfetch@resource://services-settings/Utils.sys.mjs:219:12\nfetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"open@resource://gre/modules/ServiceRequest.sys.mjs:126:11\nfetch/<@resource://services-settings/Utils.sys.mjs:268:15\nfetch@resource://services-settings/Utils.sys.mjs:219:12\nfetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}}
+    - message = 
+    - name = 
+    - result = 2152071198
+    - stack = open@resource://gre/modules/ServiceRequest.sys.mjs:126:11|fetch/<@resource://services-settings/Utils.sys.mjs:268:15|fetch@resource://services-settings/Utils.sys.mjs:219:12|fetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34|sync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42|get/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28|observe@resource://gre/modules/AsyncShutdown.sys.mjs:569:17|
+  - prototype Object
+console.error: services.settings: 
+Object
+  - prototype Object
+    - columnNumber = 0
+    - data = null
+    - filename = resource://gre/modules/ServiceRequest.sys.mjs
+    - lineNumber = 126
+    - location = {"name":"open","filename":"resource://gre/modules/ServiceRequest.sys.mjs","sourceId":25,"lineNumber":126,"columnNumber":11,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetch/<","sourceId":24,"lineNumber":268,"columnNumber":15,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetch","sourceId":24,"lineNumber":219,"columnNumber":12,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetchLatestChanges","sourceId":24,"lineNumber":429,"columnNumber":34,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/RemoteSettingsClient.sys.mjs","name":"sync","sourceId":22,"lineNumber":630,"columnNumber":42,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/RemoteSettingsClient.sys.mjs","name":"get/this._importingPromise<","sourceId":22,"lineNumber":482,"columnNumber":28,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://gre/modules/AsyncShutdown.sys.mjs","name":"observe","sourceId":15,"lineNumber":569,"columnNumber":17,"asyncCause":null,"asyncCaller":null,"caller":null,"formattedStack":"observe@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"get/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"sync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"fetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"fetch@resource://services-settings/Utils.sys.mjs:219:12\nfetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"fetch/<@resource://services-settings/Utils.sys.mjs:268:15\nfetch@resource://services-settings/Utils.sys.mjs:219:12\nfetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"open@resource://gre/modules/ServiceRequest.sys.mjs:126:11\nfetch/<@resource://services-settings/Utils.sys.mjs:268:15\nfetch@resource://services-settings/Utils.sys.mjs:219:12\nfetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}}
+    - message = 
+    - name = 
+    - result = 2152071198
+    - stack = open@resource://gre/modules/ServiceRequest.sys.mjs:126:11|fetch/<@resource://services-settings/Utils.sys.mjs:268:15|fetch@resource://services-settings/Utils.sys.mjs:219:12|fetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34|sync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42|get/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28|observe@resource://gre/modules/AsyncShutdown.sys.mjs:569:17|
+  - prototype Object
+console.error: services.settings: 
+Object
+  - prototype Object
+    - columnNumber = 0
+    - data = null
+    - filename = resource://gre/modules/ServiceRequest.sys.mjs
+    - lineNumber = 126
+    - location = {"name":"open","filename":"resource://gre/modules/ServiceRequest.sys.mjs","sourceId":25,"lineNumber":126,"columnNumber":11,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetch/<","sourceId":24,"lineNumber":268,"columnNumber":15,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetch","sourceId":24,"lineNumber":219,"columnNumber":12,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetchLatestChanges","sourceId":24,"lineNumber":429,"columnNumber":34,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/RemoteSettingsClient.sys.mjs","name":"sync","sourceId":22,"lineNumber":630,"columnNumber":42,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/RemoteSettingsClient.sys.mjs","name":"get/this._importingPromise<","sourceId":22,"lineNumber":482,"columnNumber":28,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://gre/modules/AsyncShutdown.sys.mjs","name":"observe","sourceId":15,"lineNumber":569,"columnNumber":17,"asyncCause":null,"asyncCaller":null,"caller":null,"formattedStack":"observe@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"get/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"sync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"fetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"fetch@resource://services-settings/Utils.sys.mjs:219:12\nfetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"fetch/<@resource://services-settings/Utils.sys.mjs:268:15\nfetch@resource://services-settings/Utils.sys.mjs:219:12\nfetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"open@resource://gre/modules/ServiceRequest.sys.mjs:126:11\nfetch/<@resource://services-settings/Utils.sys.mjs:268:15\nfetch@resource://services-settings/Utils.sys.mjs:219:12\nfetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}}
+    - message = 
+    - name = 
+    - result = 2152071198
+    - stack = open@resource://gre/modules/ServiceRequest.sys.mjs:126:11|fetch/<@resource://services-settings/Utils.sys.mjs:268:15|fetch@resource://services-settings/Utils.sys.mjs:219:12|fetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34|sync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42|get/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28|observe@resource://gre/modules/AsyncShutdown.sys.mjs:569:17|
+  - prototype Object
+console.error: services.settings: 
+Object
+  - prototype Object
+    - columnNumber = 0
+    - data = null
+    - filename = resource://gre/modules/ServiceRequest.sys.mjs
+    - lineNumber = 126
+    - location = {"name":"open","filename":"resource://gre/modules/ServiceRequest.sys.mjs","sourceId":25,"lineNumber":126,"columnNumber":11,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetch/<","sourceId":24,"lineNumber":268,"columnNumber":15,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetch","sourceId":24,"lineNumber":219,"columnNumber":12,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetchLatestChanges","sourceId":24,"lineNumber":429,"columnNumber":34,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/RemoteSettingsClient.sys.mjs","name":"sync","sourceId":22,"lineNumber":630,"columnNumber":42,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/RemoteSettingsClient.sys.mjs","name":"get/this._importingPromise<","sourceId":22,"lineNumber":482,"columnNumber":28,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://gre/modules/AsyncShutdown.sys.mjs","name":"observe","sourceId":15,"lineNumber":569,"columnNumber":17,"asyncCause":null,"asyncCaller":null,"caller":null,"formattedStack":"observe@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"get/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"sync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"fetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"fetch@resource://services-settings/Utils.sys.mjs:219:12\nfetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"fetch/<@resource://services-settings/Utils.sys.mjs:268:15\nfetch@resource://services-settings/Utils.sys.mjs:219:12\nfetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"open@resource://gre/modules/ServiceRequest.sys.mjs:126:11\nfetch/<@resource://services-settings/Utils.sys.mjs:268:15\nfetch@resource://services-settings/Utils.sys.mjs:219:12\nfetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}}
+    - message = 
+    - name = 
+    - result = 2152071198
+    - stack = open@resource://gre/modules/ServiceRequest.sys.mjs:126:11|fetch/<@resource://services-settings/Utils.sys.mjs:268:15|fetch@resource://services-settings/Utils.sys.mjs:219:12|fetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34|sync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42|get/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28|observe@resource://gre/modules/AsyncShutdown.sys.mjs:569:17|
+  - prototype Object
+console.error: services.settings: 
+Object
+  - prototype Object
+    - columnNumber = 0
+    - data = null
+    - filename = resource://gre/modules/ServiceRequest.sys.mjs
+    - lineNumber = 126
+    - location = {"name":"open","filename":"resource://gre/modules/ServiceRequest.sys.mjs","sourceId":25,"lineNumber":126,"columnNumber":11,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetch/<","sourceId":24,"lineNumber":268,"columnNumber":15,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetch","sourceId":24,"lineNumber":219,"columnNumber":12,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetchLatestChanges","sourceId":24,"lineNumber":429,"columnNumber":34,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/RemoteSettingsClient.sys.mjs","name":"sync","sourceId":22,"lineNumber":630,"columnNumber":42,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/RemoteSettingsClient.sys.mjs","name":"get/this._importingPromise<","sourceId":22,"lineNumber":482,"columnNumber":28,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://gre/modules/AsyncShutdown.sys.mjs","name":"observe","sourceId":15,"lineNumber":569,"columnNumber":17,"asyncCause":null,"asyncCaller":null,"caller":null,"formattedStack":"observe@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"get/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"sync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"fetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"fetch@resource://services-settings/Utils.sys.mjs:219:12\nfetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"fetch/<@resource://services-settings/Utils.sys.mjs:268:15\nfetch@resource://services-settings/Utils.sys.mjs:219:12\nfetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"open@resource://gre/modules/ServiceRequest.sys.mjs:126:11\nfetch/<@resource://services-settings/Utils.sys.mjs:268:15\nfetch@resource://services-settings/Utils.sys.mjs:219:12\nfetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}}
+    - message = 
+    - name = 
+    - result = 2152071198
+    - stack = open@resource://gre/modules/ServiceRequest.sys.mjs:126:11|fetch/<@resource://services-settings/Utils.sys.mjs:268:15|fetch@resource://services-settings/Utils.sys.mjs:219:12|fetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34|sync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42|get/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28|observe@resource://gre/modules/AsyncShutdown.sys.mjs:569:17|
+  - prototype Object
+console.error: services.settings: 
+Object
+  - prototype Object
+    - columnNumber = 0
+    - data = null
+    - filename = resource://gre/modules/ServiceRequest.sys.mjs
+    - lineNumber = 126
+    - location = {"name":"open","filename":"resource://gre/modules/ServiceRequest.sys.mjs","sourceId":25,"lineNumber":126,"columnNumber":11,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetch/<","sourceId":24,"lineNumber":268,"columnNumber":15,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetch","sourceId":24,"lineNumber":219,"columnNumber":12,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetchLatestChanges","sourceId":24,"lineNumber":429,"columnNumber":34,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/RemoteSettingsClient.sys.mjs","name":"sync","sourceId":22,"lineNumber":630,"columnNumber":42,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/RemoteSettingsClient.sys.mjs","name":"get/this._importingPromise<","sourceId":22,"lineNumber":482,"columnNumber":28,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://gre/modules/AsyncShutdown.sys.mjs","name":"observe","sourceId":15,"lineNumber":569,"columnNumber":17,"asyncCause":null,"asyncCaller":null,"caller":null,"formattedStack":"observe@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"get/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"sync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"fetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"fetch@resource://services-settings/Utils.sys.mjs:219:12\nfetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"fetch/<@resource://services-settings/Utils.sys.mjs:268:15\nfetch@resource://services-settings/Utils.sys.mjs:219:12\nfetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"open@resource://gre/modules/ServiceRequest.sys.mjs:126:11\nfetch/<@resource://services-settings/Utils.sys.mjs:268:15\nfetch@resource://services-settings/Utils.sys.mjs:219:12\nfetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}}
+    - message = 
+    - name = 
+    - result = 2152071198
+    - stack = open@resource://gre/modules/ServiceRequest.sys.mjs:126:11|fetch/<@resource://services-settings/Utils.sys.mjs:268:15|fetch@resource://services-settings/Utils.sys.mjs:219:12|fetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34|sync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42|get/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28|observe@resource://gre/modules/AsyncShutdown.sys.mjs:569:17|
+  - prototype Object
+console.error: services.settings: 
+Object
+  - prototype Object
+    - columnNumber = 0
+    - data = null
+    - filename = resource://gre/modules/ServiceRequest.sys.mjs
+    - lineNumber = 126
+    - location = {"name":"open","filename":"resource://gre/modules/ServiceRequest.sys.mjs","sourceId":25,"lineNumber":126,"columnNumber":11,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetch/<","sourceId":24,"lineNumber":268,"columnNumber":15,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetch","sourceId":24,"lineNumber":219,"columnNumber":12,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetchLatestChanges","sourceId":24,"lineNumber":429,"columnNumber":34,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/RemoteSettingsClient.sys.mjs","name":"sync","sourceId":22,"lineNumber":630,"columnNumber":42,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/RemoteSettingsClient.sys.mjs","name":"get/this._importingPromise<","sourceId":22,"lineNumber":482,"columnNumber":28,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://gre/modules/AsyncShutdown.sys.mjs","name":"observe","sourceId":15,"lineNumber":569,"columnNumber":17,"asyncCause":null,"asyncCaller":null,"caller":null,"formattedStack":"observe@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"get/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"sync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"fetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"fetch@resource://services-settings/Utils.sys.mjs:219:12\nfetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"fetch/<@resource://services-settings/Utils.sys.mjs:268:15\nfetch@resource://services-settings/Utils.sys.mjs:219:12\nfetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"open@resource://gre/modules/ServiceRequest.sys.mjs:126:11\nfetch/<@resource://services-settings/Utils.sys.mjs:268:15\nfetch@resource://services-settings/Utils.sys.mjs:219:12\nfetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}}
+    - message = 
+    - name = 
+    - result = 2152071198
+    - stack = open@resource://gre/modules/ServiceRequest.sys.mjs:126:11|fetch/<@resource://services-settings/Utils.sys.mjs:268:15|fetch@resource://services-settings/Utils.sys.mjs:219:12|fetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34|sync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42|get/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28|observe@resource://gre/modules/AsyncShutdown.sys.mjs:569:17|
+  - prototype Object
+console.error: services.settings: 
+Object
+  - prototype Object
+    - columnNumber = 0
+    - data = null
+    - filename = resource://gre/modules/ServiceRequest.sys.mjs
+    - lineNumber = 126
+    - location = {"name":"open","filename":"resource://gre/modules/ServiceRequest.sys.mjs","sourceId":25,"lineNumber":126,"columnNumber":11,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetch/<","sourceId":24,"lineNumber":268,"columnNumber":15,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetch","sourceId":24,"lineNumber":219,"columnNumber":12,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetchLatestChanges","sourceId":24,"lineNumber":429,"columnNumber":34,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/RemoteSettingsClient.sys.mjs","name":"sync","sourceId":22,"lineNumber":630,"columnNumber":42,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/RemoteSettingsClient.sys.mjs","name":"get/this._importingPromise<","sourceId":22,"lineNumber":482,"columnNumber":28,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://gre/modules/AsyncShutdown.sys.mjs","name":"observe","sourceId":15,"lineNumber":569,"columnNumber":17,"asyncCause":null,"asyncCaller":null,"caller":null,"formattedStack":"observe@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"get/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"sync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"fetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"fetch@resource://services-settings/Utils.sys.mjs:219:12\nfetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"fetch/<@resource://services-settings/Utils.sys.mjs:268:15\nfetch@resource://services-settings/Utils.sys.mjs:219:12\nfetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}},"formattedStack":"open@resource://gre/modules/ServiceRequest.sys.mjs:126:11\nfetch/<@resource://services-settings/Utils.sys.mjs:268:15\nfetch@resource://services-settings/Utils.sys.mjs:219:12\nfetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n","nativeSavedFrame":{}}
+    - message = 
+    - name = 
+    - result = 2152071198
+    - stack = open@resource://gre/modules/ServiceRequest.sys.mjs:126:11|fetch/<@resource://services-settings/Utils.sys.mjs:268:15|fetch@resource://services-settings/Utils.sys.mjs:219:12|fetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34|sync@resource://services-settings/RemoteSettingsClient.sys.mjs:630:42|get/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:482:28|observe@resource://gre/modules/AsyncShutdown.sys.mjs:569:17|
+  - prototype Object
+console.error: services.settings: 
+  Message: Error: IndexedDB: main/nimbus-secure-experiments getLastModified() IndexedDB:  execute() The application is shutting down
+  Stack:
+    IndexedDBError@resource://services-settings/IDBHelpers.sys.mjs:14:15
+ShutdownError@resource://services-settings/IDBHelpers.sys.mjs:24:5
+executeIDB@resource://services-settings/Database.sys.mjs:486:13
+getLastModified@resource://services-settings/Database.sys.mjs:166:13
+get@resource://services-settings/RemoteSettingsClient.sys.mjs:449:59
+getRecipesFromCollection@resource://nimbus/lib/RemoteSettingsExperimentLoader.sys.mjs:466:30
+getRecipesFromAllCollections@resource://nimbus/lib/RemoteSettingsExperimentLoader.sys.mjs:424:42
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:569:17
+
+console.error: (new Error("Phase \"profile-change-teardown\" is finished, it is too late to register completion condition \"ProfilesDatastoreService uninit\"", "resource://gre/modules/AsyncShutdown.sys.mjs", 718))
+console.error: NimbusMigrations: 
+  applyMigrations: error running migration 1 (import-enrollments-to-sql): TypeError: can't access property "executeTransaction", conn is null
+1751667423497	geckodriver::browser	DEBUG	Browser process stopped: exit status: 0
+1751667423520	webdriver::server	DEBUG	<- 200 OK {"value":null}
