@@ -69,10 +69,12 @@ jobs:
             cd server
             npm install
       - run:
-          name: Start mock-user-auth server in background
+          name: Start mock-user-auth server
           command: |
+            git clone https://github.com/thiagoluiznunes/mock-user-auth server
             cd server
-            npx babel-node src/server.js &
+            npm install
+            ./node_modules/.bin/babel-node src/app.js &
             sleep 5
       - run:
           name: Install Node dependencies for API tests
