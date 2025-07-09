@@ -16,7 +16,7 @@ module.exports = {
     console.log('Starting test suite...');
   },
    beforeEach: function (browser) {
-    browser.page.ContactUsPage().navigate().waitForElementVisible('@emailInput', 5000);
+    browser.page.contactUsPage().navigate().waitForElementVisible('@emailInput', 5000);
   },
 
   after: function (browser) {
@@ -24,14 +24,14 @@ module.exports = {
   },
 
   'TC1: Submit Contact Us Form with file upload Successfully': function (browser) {
-    const contactUs = browser.page.ContactUsPage();
+    const contactUs = browser.page.contactUsPage();
     contactUs
       .fillContactForm(subjectHeading, email, message, true)
       .assertSuccessMessage();
   },
 
   'TC2: Submit Contact Form with invalid email': function (browser) {
-    const contactUs = browser.page.ContactUsPage();
+    const contactUs = browser.page.contactUsPage();
     contactUs
       .fillContactForm(subjectHeading, invalidEmail, message)
       .assertErrorMessage('Invalid email address.');
