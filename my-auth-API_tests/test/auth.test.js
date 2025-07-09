@@ -10,43 +10,31 @@ const email = `user_${timestamp}@example.com`;
 const password = `pass_${Math.random().toString(36).slice(-8)}`;
 let token = "";
 
-const invalidEmail = "invalid email";
-const invalidPassword = "invalid Pass";
-const invalidToken = "invalidtoken123";
-const contentType = "application/json";
-const wrongKeyAdmin = "wrongkey";
-
-const create_EndPoint = "/api/v1/users";
 const auth_EndPoint = "/api/v1/auth";
+const create_EndPoint = "/api/v1/users";
 const patch_EndPoint = "/api/v1/users";
-const get_EndPoint = "/api/v1/users";
-const deleteUser_EndPoint = "/api/v1/users";
-const deleteAllUsers_EndPoint = "/api/v1/all-users";
 
-function logResponse(res) {
-    console.log('--- Response Start ---');
-    console.log('Status:', res.status);
-    console.log('Headers:', res.headers);
-    console.log('Body:', res.body);
-    console.log('Text:', res.text);
-    console.log('--- Response End ---');
-    if (!res.body) throw new Error(`Response body is undefined. Raw response: ${res.text}`);
+function logResponse(res, testName) {
+  console.log(`\n--- ${testName} ---`);
+  console.log('Status:', res.status);
+  console.log('Headers:', res.headers);
+  console.log('Body:', res.body);
+  console.log('Text:', res.text);
+  console.log('--- End ---\n');
 }
 
-describe('Test Suite 1 - Valid paths', function () {
+describe('Test Suite 1 - Verify that API Routes for mock-user-auth return correctly (Valid paths)', function () {
 
     it('CREATE USER - Valid', function (done) {
         request(BASE_URL)
             .post(create_EndPoint)
             .send({ name, email, password })
             .expect(200)
-            .expect(res => {
-                logResponse(res);
-                expect(res.body).to.have.property('message');
-            })
             .end((err, res) => {
+                logResponse(res, 'CREATE USER');
                 addContext(this, { title: 'Create User Response', value: res.body });
                 if (err) return done(err);
+                expect(res.body || {}).to.have.property('message', 'User registered with success');
                 done();
             });
     });
@@ -56,20 +44,15 @@ describe('Test Suite 1 - Valid paths', function () {
             .post(auth_EndPoint)
             .send({ email, password })
             .expect(200)
-            .expect(res => {
-                logResponse(res);
-                expect(res.body).to.have.property('token');
-            })
             .end((err, res) => {
+                logResponse(res, 'AUTH USER');
                 addContext(this, { title: 'Auth User Response', value: res.body });
                 if (err) return done(err);
+                expect(res.body || {}).to.have.property('token');
                 token = res.body.token;
                 done();
             });
     });
-
-    // Add logResponse(res); in all other tests as done above.
-    // Example for PATCH USER:
 
     it('PATCH USER - Valid', function (done) {
         request(BASE_URL)
@@ -77,37 +60,31 @@ describe('Test Suite 1 - Valid paths', function () {
             .set('Authorization', token)
             .send({ name: "Updated_Yara_name", email, password })
             .expect(200)
-            .expect(res => {
-                logResponse(res);
-                expect(res.body).to.have.property('message');
-            })
             .end((err, res) => {
+                logResponse(res, 'PATCH USER');
                 addContext(this, { title: 'Patch User Response', value: res.body });
                 if (err) return done(err);
+                expect(res.body || {}).to.have.property('message', 'User updated with success!');
                 done();
             });
     });
 
-    // Repeat logResponse(res); for all the other test cases following this pattern.
 });
 
-describe('Test Suite 2 - Invalid cases', function () {
+describe('Test Suite 2 - Verify that API Routes for mock-user-auth handle INVALID cases correctly', function () {
 
     it('AUTH USER - Invalid credentials', function (done) {
         request(BASE_URL)
             .post(auth_EndPoint)
-            .send({ email: invalidEmail, password: invalidPassword })
+            .send({ email: "wrong@example.com", password: "wrongpass" })
             .expect(401)
-            .expect(res => {
-                logResponse(res);
-                expect(res.body).to.have.property('message');
-            })
             .end((err, res) => {
+                logResponse(res, 'AUTH USER - Invalid Credentials');
                 addContext(this, { title: 'Auth User Invalid Credentials', value: res.body });
-                done(err);
+                if (err) return done(err);
+                expect(res.body || {}).to.have.property('message');
+                done();
             });
     });
-
-    // Repeat the same for other invalid cases...
 
 });
