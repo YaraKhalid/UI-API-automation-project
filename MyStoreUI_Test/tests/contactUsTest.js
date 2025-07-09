@@ -1,15 +1,14 @@
 /*const path = require('path');
 
-
-
 };*/
+// Variables
 const email = 'test@example.com';
 const message = 'This is a test message.';
 const subjectHeading = 'Customer service';
 const invalidEmail = 'invalid-email';
 const path = require('path');
 const longMessage = 'A'.repeat(5000);
-const shortMessage = 'Hi'; // for minimum letters test
+const shortMessage = 'H'; // for minimum letters test
 
 module.exports = {
   before: function () {
