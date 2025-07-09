@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="10">
+
+  <testsuite name="contactUsTest"
+    errors="0" failures="1" hostname="" id="" package="contactUsTest" skipped="0"
+    tests="10" time="27.79" timestamp="">
+  
+    <testcase name="TC1: Submit Contact Us Form with file upload Successfully" classname="contactUsTest" time="6.738" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="TC2: Submit Contact Form with invalid email" classname="contactUsTest" time="2.179" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="TC3: Submit Contact Form without subject heading" classname="contactUsTest" time="1.406" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="TC4: Submit Contact Form without message" classname="contactUsTest" time="1.349" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="TC5: Submit Contact Form with all mandatory fields missing" classname="contactUsTest" time="1.815" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="TC6: Submit Contact Form with invalid file format" classname="contactUsTest" time="6.820" assertions="3">
+
+    
+
+      <failure message="Testing if element &lt;Element [name=@errorAlert]&gt; contains text &#39;Invalid file format.&#39; in 5000ms - expected &#34;contains text &#39;Invalid file format.&#39;&#34; but got: &#34;does not contain &#39;Invalid file format.&#39;&#34; (5209ms)">    at Page.assertErrorMessage (/Users/yara.sayed1/Documents/MyStore/page-objects/ContactUsPage.js:108:17)
+    at Object.TC6: Submit Contact Form with invalid file format (/Users/yara.sayed1/Documents/MyStore/tests/contactUsTest.js:301:8)</failure>
+
+    
+    </testcase>
+  
+    <testcase name="TC7: Submit Contact Form successfully without file upload" classname="contactUsTest" time="1.562" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="TC9: Submit Contact Form with minimum letters in message" classname="contactUsTest" time="1.464" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="TC10: Submit Contact Form with 50,000 characters in message" classname="contactUsTest" time="3.086" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="TC11: Submit Contact Form with empty email field" classname="contactUsTest" time="1.366" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

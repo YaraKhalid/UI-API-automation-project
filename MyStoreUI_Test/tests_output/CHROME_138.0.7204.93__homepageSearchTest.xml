@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="homepageSearchTest"
+    errors="0" failures="0" hostname="" id="" package="homepageSearchTest" skipped="0"
+    tests="1" time="8.287" timestamp="">
+  
+    <testcase name="TC1: Search for &#34;dress&#34; and verify results are displayed" classname="homepageSearchTest" time="8.287" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

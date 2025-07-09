@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="0">
+
+  <testsuite name="UI"
+    errors="1" failures="0" hostname="" id="" package="UI" skipped="1"
+    tests="0" time="0.000" timestamp="">
+  
+
+  
+    <system-err>
+        Error: An error occurred while retrieving a new session: &#34;session not created
+  from unknown error: cannot find Chrome binary&#34;
+   from unknown error: cannot find Chrome binary&#34;
+       at HttpRequest.emit (node:events:527:28)
+       at HttpResponse.emit (node:events:527:28)
+       at IncomingMessage.emit (node:events:539:35)
+       at endReadableNT (node:internal/streams/readable:1345:12)
+       at processTicksAndRejections (node:internal/process/task_queues:83:21)
+    </system-err>
+  
+
+    
+    <error message="An error occurred while retrieving a new session: &#34;session not created
+from unknown error: cannot find Chrome binary&#34;"><![CDATA[
+      Error: An error occurred while retrieving a new session: &#34;session not created
+from unknown error: cannot find Chrome binary&#34;
+    at WebdriverProtocol.handleSessionCreateError (/Users/yara.sayed1/Documents/MyStore/node_modules/nightwatch/lib/transport/transport.js:110:15)
+    at HttpRequest.&lt;anonymous&gt; (/Users/yara.sayed1/Documents/MyStore/node_modules/nightwatch/lib/transport/transport.js:166:32)
+    at HttpRequest.emit (node:events:527:28)
+    at HttpResponse.&lt;anonymous&gt; (/Users/yara.sayed1/Documents/MyStore/node_modules/nightwatch/lib/http/request.js:143:19)
+    at HttpResponse.emit (node:events:527:28)
+    at IncomingMessage.&lt;anonymous&gt; (/Users/yara.sayed1/Documents/MyStore/node_modules/nightwatch/lib/http/response.js:60:14)
+    at IncomingMessage.emit (node:events:539:35)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+      ]]></error>  
+
+  
+    
+    <testcase
+      name="Demo test Google" classname="UI">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>
