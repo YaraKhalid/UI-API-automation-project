@@ -3,7 +3,7 @@ version: 2.1
 executors:
   node-executor:
     docker:
-      - image: cimg/node:18.20-browsers # ✅ Includes Chrome & Chromedriver pre-installed
+      - image: cimg/node:20.10-browsers # ✅ Includes Chrome & Chromedriver pre-installed
 
 jobs:
   ui-tests:
@@ -11,24 +11,15 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Install system dependencies
-          command: |
-            sudo apt-get update
-            sudo apt-get install -y libnss3 libnspr4 libatk1.0-0 libatk-bridge2.0-0 libcups2 libxcomposite1 libxrandr2 libxdamage1 libgbm-dev libpango1.0-0 libasound2 libxshmfence-dev libx11-xcb1 libxss1 fonts-liberation libappindicator3-1 xdg-utils
-      - run:
           name: Install Node dependencies for UI tests
           command: |
             cd MyStoreUI_Test
             npm install
       - run:
-          name: Find Chromedriver
+          name: Check Chrome & Chromedriver versions
           command: |
-            which chromedriver || echo "chromedriver not found"
+            google-chrome --version || google-chrome-stable --version
             chromedriver --version || echo "chromedriver version check failed"
-            find / -name chromedriver 2>/dev/null || echo "No chromedriver found"
-      - run:
-          name: Check Chrome version
-          command: google-chrome --version || google-chrome-stable --version
       - run:
           name: Run homepage search tests
           command: |
