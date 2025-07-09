@@ -1,0 +1,51 @@
+version: 2.1
+
+executors:
+  node-executor:
+    docker:
+      - image: cimg/node:18.20
+
+jobs:
+  ui-tests:
+    executor: node-executor
+    steps:
+      - checkout
+      - run:
+          name: Install UI test dependencies
+          command: |
+            cd MyStoreUI_Test
+            npm install
+      - run:
+          name: Run Homepage Search Tests
+          command: |
+            cd MyStoreUI_Test
+            npx nightwatch tests/homepageSearchTest.js
+      - run:
+          name: Run Contact Us Tests
+          command: |
+            cd MyStoreUI_Test
+            npx nightwatch tests/contactUsTest.js
+
+  api-tests:
+    executor: node-executor
+    steps:
+      - checkout
+      - run:
+          name: Install API test dependencies
+          command: |
+            cd my-auth-API_tests
+            npm install
+      - run:
+          name: Run API Tests
+          command: |
+            cd my-auth-API_tests
+            npx mocha tests/*.test.js --reporter mochawesome
+
+workflows:
+  version: 2
+  build-and-test:
+    jobs:
+      - ui-tests
+      - api-tests:
+          requires:
+            - ui-tests
