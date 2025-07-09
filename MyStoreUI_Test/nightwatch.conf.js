@@ -33,12 +33,15 @@ module.exports = {
       // ✅ Basic Chrome WebDriver setup
       webdriver: {
         start_process: true,
-        server_path: require('chromedriver').path,
-        port: 9515
+        erver_path: '/usr/bin/chromedriver', // This is the correct path on cimg/node:*-browsers
+        port: 9515,
       },
 
       desiredCapabilities: {
-        browserName: 'chrome'
+        browserName: 'chrome',
+        'goog:chromeOptions': {
+          args: ['--headless', '--no-sandbox', '--disable-gpu', '--window-size=1920,1080']
+        }
       },
 
       globals: {
