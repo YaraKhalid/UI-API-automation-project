@@ -1,5 +1,5 @@
 const path = require('path');
-const chromedriver = require('chromedriver'); // ✅ Require the local Chromedriver
+const chromedriver = require('chromedriver'); // ✅ Local Chromedriver from node_modules
 const HtmlReporter = require('nightwatch-html-reporter');
 
 // ✅ HTML Report configuration
@@ -14,7 +14,7 @@ module.exports = {
   src_folders: ['tests'],
   page_objects_path: ['page-objects'],
 
-  // ✅ Enable parallel execution (optional, keep if needed)
+  // ✅ Enable parallel execution
   test_workers: {
     enabled: true,
     workers: 'auto'
@@ -31,7 +31,7 @@ module.exports = {
         on_error: true
       },
 
-      // ✅ Automatically start Chromedriver from node_modules
+      // ✅ Start Chromedriver automatically from node_modules
       webdriver: {
         start_process: true,
         server_path: chromedriver.path,
@@ -42,6 +42,7 @@ module.exports = {
       desiredCapabilities: {
         browserName: 'chrome',
         'goog:chromeOptions': {
+          binary: '/usr/bin/google-chrome', // ✅ Explicitly set Chrome binary path for CI
           args: ['--headless', '--no-sandbox', '--disable-gpu', '--window-size=1920,1080']
         }
       },
