@@ -8,18 +8,20 @@ executors:
 jobs:
   ui-tests:
     executor: node-executor
-    working_directory: ~/project/MyStoreUI_Test
     steps:
       - checkout
+      - run:
+          name: Change directory to UI project
+          command: cd MyStoreUI_Test
       - run:
           name: Install system dependencies
           command: |
             sudo apt-get update
             sudo apt-get install -y libnss3 libnspr4 libatk1.0-0 libatk-bridge2.0-0 libcups2 libxcomposite1 libxrandr2 libxdamage1 libgbm-dev libpango1.0-0 libasound2 libxshmfence-dev libx11-xcb1 libxss1 fonts-liberation libappindicator3-1 xdg-utils
-      - run: npm install
-      - run: npx nightwatch tests/homepageSearchTest.js
-      - run: npx nightwatch tests/contactUsTest.js
-
-  api-tests:
-    executor: node-executor
-    working_directory: ~/project/my-auth-API_tests
+      - run:
+          name: Install dependencies
+          command: |
+            cd MyStoreUI_Test
+            npm install
+      - run:
+          name
