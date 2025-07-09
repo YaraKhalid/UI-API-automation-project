@@ -6,3 +6,7 @@ and an API automation for the Mock-user-auth:
 https://www.npmjs.com/package/mock-user-auth
 
 README file is attached independently on each test of them. 
+
+🔗 Author
+Yara Khaled Sayed
+Software Test Engineer
