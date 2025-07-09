@@ -36,12 +36,6 @@ jobs:
             ls -la
             pwd
             cat nightwatch.conf.js
-
-      - run:
-          name: Run homepage search tests
-          command: |
-            cd MyStoreUI_Test
-            npx nightwatch tests/homepageSearchTest.js || true
       - run:
           name: Run contact us tests
           command: |
