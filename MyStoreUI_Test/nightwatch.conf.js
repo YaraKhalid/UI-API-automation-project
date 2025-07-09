@@ -1,8 +1,7 @@
 const path = require('path');
-const chromedriver = require('chromedriver'); // ✅ Local Chromedriver from node_modules
+const chromedriver = require('chromedriver');
 const HtmlReporter = require('nightwatch-html-reporter');
 
-// ✅ HTML Report configuration
 const reporter = new HtmlReporter({
   openBrowser: false,
   reportsDirectory: path.join(__dirname, 'reports'),
@@ -31,21 +30,27 @@ module.exports = {
         on_error: true
       },
 
-      // ✅ Start Chromedriver automatically from node_modules
       webdriver: {
         start_process: true,
-        server_path: chromedriver.path,
+        server_path: chromedriver.path, // ✅ Chromedriver from node_modules
         port: 9515,
-        host: 'localhost',
       },
 
       desiredCapabilities: {
         browserName: 'chrome',
         'goog:chromeOptions': {
-          binary: '/usr/bin/google-chrome', // ✅ Explicitly set Chrome binary path for CI
-          args: ['--headless', '--no-sandbox', '--disable-gpu', '--window-size=1920,1080']
+          args: [
+            '--headless',
+            '--no-sandbox',
+            '--disable-gpu',
+            '--window-size=1920,1080'
+          ]
         }
       },
+
+      cli_args: [
+        '--verbose'
+      ],
 
       globals: {
         reporter: reporter.fn,
