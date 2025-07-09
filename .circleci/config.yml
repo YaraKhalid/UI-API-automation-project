@@ -3,7 +3,7 @@ version: 2.1
 executors:
   node-executor:
     docker:
-      - image: cimg/node:20.10-browsers # ✅ Chrome & Chromedriver pre-installed
+      - image: cimg/node:20.10-browsers # Chrome & Chromedriver pre-installed
 
 jobs:
   ui-tests:
