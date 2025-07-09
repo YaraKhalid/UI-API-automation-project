@@ -65,12 +65,13 @@ jobs:
             npm install
 
       - run:
-          name: Start mock-user-auth API server
+          name: Clone and start mock-user-auth server
           command: |
-            cd my-auth-API_tests
-            npm run start &   # ✅ Start your API in the background
-            sleep 5           # ✅ Wait for the server to be ready (increase to 10 if needed)
-
+            git clone https://github.com/thiagoluiznunes/mock-user-auth server
+            cd server
+            npm install
+            npm run dev 3000 &   # 'dev' script launches server
+            sleep 5               # allow time to boot
       - run:
           name: Run API tests
           environment:
