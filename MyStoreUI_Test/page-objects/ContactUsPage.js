@@ -1,8 +1,9 @@
 const path = require('path');
 
 module.exports = {
-  url: 'http://automationpractice.multiformis.com/index.php?controller=contact',
+  url: 'http://automationpractice.multiformis.com/index.php?controller=contact', //site URL
 
+  // Locators
   elements: {
     subjectHeading: '#id_contact',
     emailInput: '#email',
@@ -14,8 +15,9 @@ module.exports = {
     errorAlert: '.alert-danger'
   },
 
+  //Functions
   commands: [{
-    fillContactForm(subject, email, message, uploadFile = false) {
+    fillContactForm(subject, email, message, uploadFile = false) {   // a function to fill in the contact us form
       const filePath = path.resolve(__dirname, '../uploads/tesstt.pdf');
 
       this.setValue('@subjectHeading', subject)
@@ -37,13 +39,13 @@ module.exports = {
       return this.click('@submitButton');
     },
 
-    assertSuccessMessage() {
+    assertSuccessMessage() { // Function to assert the successful form submition
       return this
         .waitForElementVisible('@successAlert', 5000)
         .assert.containsText('@successAlert', 'Your message has been successfully sent to our team.');
     },
 
-    assertErrorMessage(expectedError) {
+    assertErrorMessage(expectedError) { // Function to assert the failure in submitting the form
       return this
         .waitForElementVisible('@errorAlert', 5000)
         .assert.containsText('@errorAlert', expectedError);
