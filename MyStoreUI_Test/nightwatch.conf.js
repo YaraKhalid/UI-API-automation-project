@@ -32,9 +32,9 @@ module.exports = {
 
       // ✅ Basic Chrome WebDriver setup
       webdriver: {
-        start_process: true,
-        server_path: '/usr/bin/chromedriver', // This is the correct path on cimg/node:*-browsers
+        start_process: false,
         port: 9515,
+        host: 'localhost',
       },
 
       desiredCapabilities: {
