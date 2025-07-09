@@ -30,6 +30,14 @@ jobs:
             google-chrome --version || google-chrome-stable --version
             chromedriver --version || echo "chromedriver version check failed"
       - run:
+          name: Debug Nightwatch config and page objects
+          command: |
+            cd MyStoreUI_Test
+            ls -la
+            pwd
+            cat nightwatch.conf.js
+
+      - run:
           name: Run homepage search tests
           command: |
             cd MyStoreUI_Test
