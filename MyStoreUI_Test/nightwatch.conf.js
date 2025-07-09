@@ -9,11 +9,11 @@ const reporter = new HtmlReporter({
 });
 
 module.exports = {
-  // ✅ Test and Page Object locations
+  // Test and Page Object locations
   src_folders: ['tests'],
   page_objects_path: ['page-objects'],
 
-  // ✅ Enable parallel execution
+  // Enable parallel execution
   test_workers: {
     enabled: true,
     workers: 'auto'
@@ -32,7 +32,7 @@ module.exports = {
 
       webdriver: {
         start_process: true,
-        server_path: chromedriver.path, // ✅ Chromedriver from node_modules
+        server_path: chromedriver.path, //  Chromedriver from node_modules
         port: 9515,
       },
 
