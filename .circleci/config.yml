@@ -59,4 +59,43 @@ jobs:
       - checkout
 
       - run:
-          name: Clone mock-user-aut
+          name: Clone mock-user-auth
+          command: |
+            git clone https://github.com/thiagoluiznunes/mock-user-auth server
+
+      - run:
+          name: Install dependencies for mock-user-auth
+          command: |
+            cd server
+            npm install
+
+      - run:
+          name: Start mock-user-auth server in background
+          command: |
+            cd server
+            chmod +x scripts/start.sh
+            ./scripts/start.sh &
+            sleep 5
+
+      - run:
+          name: Install Node dependencies for API tests
+          command: |
+            cd my-auth-API_tests
+            npm install
+
+      - run:
+          name: Run API tests
+          environment:
+            BASE_URL: http://localhost:3000
+          command: |
+            cd my-auth-API_tests
+            npx mocha test/auth.test.js --reporter mochawesome
+
+workflows:
+  version: 2
+  build-and-test:
+    jobs:
+      - ui-tests
+      - api-tests:
+          requires:
+            - ui-tests
