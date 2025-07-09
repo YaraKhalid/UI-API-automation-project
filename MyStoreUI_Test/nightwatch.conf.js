@@ -32,9 +32,9 @@ module.exports = {
 
       // ✅ Basic Chrome WebDriver setup
       webdriver: {
-        start_process: true,
+        start_process: false,
         server_path: require('chromedriver').path,
-        port: 4444
+        port: 9515
       },
 
       desiredCapabilities: {
