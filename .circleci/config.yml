@@ -10,11 +10,13 @@ jobs:
     executor: node-executor
     steps:
       - checkout
+
       - run:
           name: Install Node dependencies for UI tests
           command: |
             cd MyStoreUI_Test
             npm install
+
       - run:
           name: Install Google Chrome
           command: |
@@ -24,11 +26,13 @@ jobs:
             echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
             sudo apt-get update
             sudo apt-get install -y google-chrome-stable
+
       - run:
           name: Check Chrome & Chromedriver versions
           command: |
             google-chrome --version || google-chrome-stable --version
             chromedriver --version || echo "chromedriver version check failed"
+
       - run:
           name: Debug Nightwatch config and page objects
           command: |
@@ -36,31 +40,35 @@ jobs:
             ls -la
             pwd
             cat nightwatch.conf.js
-       - run:
+
+      - run:
           name: Run homepage search tests
           command: |
             cd MyStoreUI_Test
             npx nightwatch tests/homepageSearchTest.js || true
+
       - run:
           name: Run contact us tests
           command: |
             cd MyStoreUI_Test
-            npx nightwatch tests/contactUsTest.js --env default 
+            npx nightwatch tests/contactUsTest.js --env default
 
   api-tests:
     executor: node-executor
     steps:
       - checkout
+
       - run:
           name: Install Node dependencies for API tests
           command: |
             cd my-auth-API_tests
             npm install
+
       - run:
           name: Run API tests
           command: |
             cd my-auth-API_tests
-            npx mocha test/auth.test.js --reporter mochawesome 
+            npx mocha test/auth.test.js --reporter mochawesome
 
 workflows:
   version: 2
