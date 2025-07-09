@@ -21,11 +21,6 @@ jobs:
             cd MyStoreUI_Test
             npm install
       - run:
-          name: Start Chromedriver
-          command: |
-            chromedriver --port=9515 --url-base=/wd/hub &
-            sleep 3
-      - run:
           name: Run homepage search tests
           command: |
             cd MyStoreUI_Test
