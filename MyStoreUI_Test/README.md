@@ -3,6 +3,7 @@ This project contains automated UI tests for the MyStore website (http://automat
 The project uses Nightwatch.js and follows the Page Object Model (POM) design pattern; no hardcoded selectors
  
  Project Structure
+
 MyStore/
 ├── page-objects/          # Page Object classes for HomePage & ContactUsPage
 │   ├── HomePage.js
