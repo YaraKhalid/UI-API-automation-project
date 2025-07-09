@@ -73,9 +73,10 @@ jobs:
       - run:
           name: Start mock-user-auth server in background
           command: |
-            cd server
-            nohup npm start &   # start.sh script is the correct one per your package.json
-            sleep 5             # wait for server to boot
+            cd mock-user-auth
+            npm run build
+            nohup node dist/server.js &
+            sleep 5
 
       - run:
           name: Install Node dependencies for API tests
