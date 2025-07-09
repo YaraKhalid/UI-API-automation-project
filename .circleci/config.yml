@@ -3,7 +3,7 @@ version: 2.1
 executors:
   node-executor:
     docker:
-      - image: cimg/node:18.20
+      - image: cimg/node:18.20-browsers # ✅ Includes Chrome & Chromedriver pre-installed
 
 jobs:
   ui-tests:
@@ -20,6 +20,11 @@ jobs:
           command: |
             cd MyStoreUI_Test
             npm install
+      - run:
+          name: Start Chromedriver
+          command: |
+            chromedriver --port=9515 --url-base=/wd/hub &
+            sleep 3
       - run:
           name: Run homepage search tests
           command: |
