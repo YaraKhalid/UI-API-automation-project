@@ -62,38 +62,43 @@ jobs:
           name: Clone mock-user-auth
           command: |
             git clone https://github.com/thiagoluiznunes/mock-user-auth server
+
       - run:
           name: Install dependencies for mock-user-auth
           command: |
             cd server
             npm install
+            chmod +x scripts/*.sh  # ✅ Make sure scripts are executable
+
       - run:
           name: List files in server folder
           command: |
             cd server
             ls -R
+
       - run:
           name: Start mock-user-auth server
           command: |
-            rm -rf server
-            git clone https://github.com/thiagoluiznunes/mock-user-auth server
             cd server
-            npm install
-            npm run dev &
-            sleep 5
+            npm run dev &          # ✅ Correctly start the server using the dev script
+            sleep 5                # Give the server time to start
+
+      - run:
+          name: Check server status
+          command: |
+            curl -I http://localhost:3000 || echo "Server not running"
+
+      - run:
+          name: Check mock-user-auth API route
+          command: |
+            curl -i -X POST http://localhost:3000/api/user -H "Content-Type: application/json" -d '{"name":"Yara","password":"123"}'
+
       - run:
           name: Install Node dependencies for API tests
           command: |
             cd my-auth-API_tests
             npm install
-      - run:
-          name: Check server status
-          command: |
-            curl -I http://localhost:3000 || echo "Server not running"
-      - run:
-          name: Check mock-user-auth API route
-          command: |
-            curl -i -X POST http://localhost:3000/api/user -H "Content-Type: application/json" -d '{"name":"Yara","password":"123"}'
+
       - run:
           name: Run API tests
           environment:
