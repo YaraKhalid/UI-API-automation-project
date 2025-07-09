@@ -21,6 +21,12 @@ jobs:
             cd MyStoreUI_Test
             npm install
       - run:
+          name: Find Chromedriver
+          command: |
+            which chromedriver || echo "chromedriver not found"
+            chromedriver --version || echo "chromedriver version check failed"
+            find / -name chromedriver 2>/dev/null || echo "No chromedriver found"
+      - run:
           name: Run homepage search tests
           command: |
             cd MyStoreUI_Test
