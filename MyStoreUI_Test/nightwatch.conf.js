@@ -1,9 +1,12 @@
 const path = require('path');
+const chromedriver = require('chromedriver'); // ✅ Require the local Chromedriver
 const HtmlReporter = require('nightwatch-html-reporter');
+
+// ✅ HTML Report configuration
 const reporter = new HtmlReporter({
-  openBrowser: false, // Set to true if you want the report to open automatically
-  reportsDirectory: __dirname + '/reports', // Directory to save reports
-  themeName: 'default', // Choose a theme (default, compact, etc.)
+  openBrowser: false,
+  reportsDirectory: path.join(__dirname, 'reports'),
+  themeName: 'default',
 });
 
 module.exports = {
@@ -19,10 +22,8 @@ module.exports = {
 
   test_settings: {
     default: {
-      // ✅ Prevent stopping on failure
       skip_testcases_on_fail: false,
 
-      // ✅ (Optional) Enable screenshots on failure
       screenshots: {
         enabled: true,
         path: 'screens',
@@ -30,9 +31,10 @@ module.exports = {
         on_error: true
       },
 
-      // ✅ Basic Chrome WebDriver setup
+      // ✅ Automatically start Chromedriver from node_modules
       webdriver: {
-        start_process: false,
+        start_process: true,
+        server_path: chromedriver.path,
         port: 9515,
         host: 'localhost',
       },
