@@ -62,10 +62,21 @@ jobs:
             cd my-auth-API_tests
             npm install mock-user-auth --save-dev
       - run:
+          name: Clean and Install API dependencies
+          command: |
+            cd my-auth-API_tests
+            rm -rf node_modules
+            npm cache clean --force
+            npm install
+      - run:
+          name: Kill any previous mock-user-auth processes
+          command: |
+            pkill -f "mock-user-auth" || true
+      - run:
           name: Start mock-user-auth server
           command: |
             cd my-auth-API_tests
-            npx mock-user-auth start 3000 &
+            npx mock-user-auth --port 3000 &
       - run:
           name: Wait for server to start
           command: |
