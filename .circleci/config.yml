@@ -49,4 +49,16 @@ jobs:
 
   api-tests:
     executor: node-executor
-    step
+    steps:
+      - checkout
+      - run:
+          name: Install Node dependencies for API tests
+          command: |
+            cd my-auth-API_tests
+            npm install
+      - run:
+          name: Install mock-user-auth locally
+          command: |
+            cd my-auth-API_tests
+            npm install mock-user-auth
+      - run:
