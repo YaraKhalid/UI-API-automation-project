@@ -67,12 +67,6 @@ jobs:
       - run:
           name: Kill any previous mock-user-auth processes
           command: pkill -f "mock-user-auth" || true
-            - run:
-                name: Start mock-user-auth server in background
-                command: |
-                  cd server
-                  npm run dev &
-                  echo "Server started"
       - run:
           name: Start mock-user-auth server
           command: |
