@@ -65,9 +65,6 @@ jobs:
             cd server
             npm install
       - run:
-          name: Kill any previous mock-user-auth processes
-          command: pkill -f "mock-user-auth" || true
-      - run:
           name: Start mock-user-auth server
           command: |
             cd server
