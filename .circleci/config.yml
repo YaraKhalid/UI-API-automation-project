@@ -66,59 +66,37 @@ jobs:
             cd server
             npm install
       - run:
-          name: Start server & run API tests
+          name: Verify server is up
           command: |
-            cd server
-            nohup npm run dev > ../server.log 2>&1 &
-            echo "Waiting for server to start..."
+            curl -I http://localhost:3000/api/v1/users || (echo "Server did not start" && exit 1)
+      - run:
+          name: Wait for server to be ready
+          command: |
+            echo "Waiting for server to be ready..."
             for i in {1..15}; do
-              sleep 2
               STATUS=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/api/v1/users || true)
               echo "Attempt $i: Status $STATUS"
               if [ "$STATUS" = "200" ] || [ "$STATUS" = "403" ]; then
                 echo "Server is up with status $STATUS."
                 break
               fi
+              echo "--- server/server.log output ---"
+              cat server/server.log || true
+              echo "--------------------------------"
               if [ "$i" -eq 15 ]; then
                 echo "Server did not start successfully."
                 exit 1
               fi
+              sleep 2
             done
-            cd ../my-auth-API_tests
+      - run:
+          name: Show server logs before running tests
+          command: cat server/server.log || true
+      - run:
+          name: Run API tests
+          command: |
+            cd my-auth-API_tests
             BASE_URL=http://localhost:3000 npx mocha test/auth.test.js --reporter mochawesome
-
-      # - run:
-      #     name: Verify server is up
-      #     command: |
-      #       curl -I http://localhost:3000/api/v1/users || (echo "Server did not start" && exit 1)
-      # - run:
-      #     name: Wait for server to be ready
-      #     command: |
-      #       echo "Waiting for server to be ready..."
-      #       for i in {1..15}; do
-      #         STATUS=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/api/v1/users || true)
-      #         echo "Attempt $i: Status $STATUS"
-      #         if [ "$STATUS" = "200" ] || [ "$STATUS" = "403" ]; then
-      #           echo "Server is up with status $STATUS."
-      #           break
-      #         fi
-      #         echo "--- server/server.log output ---"
-      #         cat server/server.log || true
-      #         echo "--------------------------------"
-      #         if [ "$i" -eq 15 ]; then
-      #           echo "Server did not start successfully."
-      #           exit 1
-      #         fi
-      #         sleep 2
-      #       done
-      # - run:
-      #     name: Show server logs before running tests
-      #     command: cat server/server.log || true
-      # - run:
-      #     name: Run API tests
-      #     command: |
-      #       cd my-auth-API_tests
-      #       BASE_URL=http://localhost:3000 npx mocha test/auth.test.js --reporter mochawesome
 
 workflows:
   version: 2
