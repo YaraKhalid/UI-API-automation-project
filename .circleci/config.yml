@@ -59,30 +59,23 @@ jobs:
       - run:
           name: Install mock-user-auth server
           command: |
-            cd my-auth-API_tests
-            npm install mock-user-auth
+            npm install -g mock-user-auth
+
       - run:
-          name: Start mock-user-auth server in background
+          name: Start mock-user-auth server
           command: |
-            cd my-auth-API_tests
-            npx mock-user-auth start 3000 > server.log 2>&1 &
-            echo $! > server.pid
-      - run:
-          name: Wait for server to be ready
-          command: |
+            mock-user-auth --port 3000 &
             echo "Waiting for server to start..."
             for i in {1..15}; do
               sleep 2
-              if curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/api/v1/users | grep -q "200"; then
-                echo "Server is up"
-                break
-              fi
-              if [ "$i" -eq 15 ]; then
-                echo "Server failed to start"
-                cat my-auth-API_tests/server.log
-                exit 1
-              fi
+              curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/api/v1/users && break
             done
+
+      - run:
+          name: Run API tests
+          command: |
+          cd my-auth-API_tests
+          BASE_URL=http://localhost:3000 npx mocha test/auth.test.js --reporter mochawesome
       - run:
           name: Run API tests
           command: |
