@@ -3,7 +3,7 @@ version: 2.1
 executors:
   node-executor:
     docker:
-      - image: cimg/node:20.10-browsers
+      - image: cimg/node:20.10-browsers # ✅ Chrome & Chromedriver pre-installed
 
 jobs:
   ui-tests:
@@ -56,36 +56,22 @@ jobs:
           command: |
             cd my-auth-API_tests
             npm install
+
       - run:
           name: Install mock-user-auth server
           command: |
-            cd my-auth-API_tests
-            npm install mock-user-auth --save-dev
-      - run:
-          name: Clean and Install API dependencies
-          command: |
-            cd my-auth-API_tests
-            rm -rf node_modules
-            npm cache clean --force
-            npm install
+            npm install -g mock-user-auth
+
       - run:
           name: Start mock-user-auth server
           command: |
-            rm -rf server
-            git clone https://github.com/thiagoluiznunes/mock-user-auth server
-            cd server
-            npm install
-            npm run dev &
-            sleep 5
-      - run:
-          name: Check server status
-          command: |
-            curl -I http://localhost:3000 || echo "Server not running"    
-      - run:
-          name: Run API tests
-          command: |
-            cd my-auth-API_tests
-            BASE_URL=http://localhost:3000 npx mocha test/auth.test.js --reporter mochawesome
+            mock-user-auth --port 3000 &
+            echo "Waiting for server to start..."
+            for i in {1..15}; do
+              sleep 2
+              curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/api/v1/users && break
+            done
+  
       - run:
           name: Run API tests
           command: |
