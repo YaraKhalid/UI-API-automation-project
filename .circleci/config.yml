@@ -3,10 +3,7 @@ version: 2.1
 executors:
   node-executor:
     docker:
-      - image: cimg/node:20.10-browsers # UI tests still need this
-  api-node-executor:
-    docker:
-      - image: circleci/node:11.15 # ➡️ This will run your API server & tests
+      - image: cimg/node:20.10-browsers # ✅ Chrome & Chromedriver pre-installed
 
 jobs:
   ui-tests:
@@ -66,73 +63,32 @@ jobs:
             cd server
             npm install
       - run:
-          name: Start mock-user-auth server in background and run API tests
+          name: Start mock-user-auth server
           command: |
             cd server
-            nohup npm start > ../server.log 2>&1 &
-            cd ..
+            npm run dev &
             echo "Waiting for server to start..."
             for i in {1..15}; do
               sleep 2
-              STATUS=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/api/v1/users || true)
-              echo "Attempt $i: Status $STATUS"
-              if [ "$STATUS" = "200" ] || [ "$STATUS" = "403" ]; then
-                echo "Server is up with status $STATUS."
-                break
-              fi
-              if [ "$i" -eq 15 ]; then
-                echo "Server did not start successfully."
-                cat server.log || true
-                exit 1
-              fi
+              curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/api/v1/users && break
             done
-            # Run tests
+      - run:
+          name: Verify server is up
+          command: |
+            curl -I http://localhost:3000/api/v1/users || (echo "Server did not start" && exit 1)
+      - run:
+          name: Show server logs before running tests
+          command: cat server/server.log || true
+      - run:
+          name: Run API tests
+          command: |
             cd my-auth-API_tests
             BASE_URL=http://localhost:3000 npx mocha test/auth.test.js --reporter mochawesome
-
-      # - run:
-      #     name: Start mock-user-auth server
-      #     command: |
-      #       cd server
-      #       npm run dev &
-      #       echo "Waiting for server to start..."
-      #       for i in {1..15}; do
-      #         sleep 2
-      #         curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/api/v1/users && break
-      #       done
-      # - run:
-      #     name: Verify server is up
-      #     command: |
-      #       curl -I http://localhost:3000/api/v1/users || (echo "Server did not start" && exit 1)
-      # - run:
-      #     name: Wait for server to be ready
-      #     command: |
-      #       echo "Waiting for server to be ready..."
-      #       for i in {1..15}; do
-      #         STATUS=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/api/v1/users || true)
-      #         echo "Attempt $i: Status $STATUS"
-      #         if [ "$STATUS" = "200" ] || [ "$STATUS" = "403" ]; then
-      #           echo "Server is up with status $STATUS."
-      #           break
-      #         fi
-      #         echo "--- server/server.log output ---"
-      #         cat server/server.log || true
-      #         echo "--------------------------------"
-      #         if [ "$i" -eq 15 ]; then
-      #           echo "Server did not start successfully."
-      #           exit 1
-      #         fi
-      #         sleep 2
-      #       done
-      # - run:
-      #     name: Show server logs before running tests
-      #     command: cat server/server.log || true
-      # - run:
-      #     name: Run API tests
-      #     command: |
-      #       cd my-auth-API_tests
-      #       BASE_URL=http://localhost:3000 npx mocha test/auth.test.js --reporter mochawesome
-
+      - run:
+          name: Print mock-user-auth server logs
+          command: |
+            echo "Server logs:"
+            cat server/server.log || true
 workflows:
   version: 2
   build-and-test:
