@@ -69,7 +69,7 @@ jobs:
           name: Start mock-user-auth server in background
           command: |
             cd server
-            nohup npm run dev > ../server.log 2>&1 &
+            npm run dev &
             echo "Server started"
 
       - run:
