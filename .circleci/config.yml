@@ -3,7 +3,7 @@ version: 2.1
 executors:
   node-executor:
     docker:
-      - image: cimg/node:20.10-browsers # ✅ Chrome & Chromedriver pre-installed
+      - image: cimg/node:20.10-browsers
 
 jobs:
   ui-tests:
@@ -51,13 +51,11 @@ jobs:
     executor: node-executor
     steps:
       - checkout
-
       - run:
           name: Install Node dependencies for API tests
           command: |
             cd my-auth-API_tests
             npm install
-
       - run:
           name: Clone and install mock-user-auth server
           command: |
@@ -73,13 +71,13 @@ jobs:
           name: Start mock-user-auth server
           command: |
             cd server
-            npm run start > server.log 2>&1 &
+            chmod +x scripts/dev.sh
+            npm run dev > server.log 2>&1 &
       - run:
           name: Wait for server to be ready
           command: |
-            echo "Waiting for server to start..."
+            echo "Waiting for server to be ready..."
             for i in {1..15}; do
-              sleep 2
               STATUS=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/api/v1/users || true)
               echo "Attempt $i: Status $STATUS"
               if [ "$STATUS" = "200" ] || [ "$STATUS" = "403" ]; then
@@ -90,6 +88,7 @@ jobs:
                 echo "Server did not start successfully."
                 exit 1
               fi
+              sleep 2
             done
       - run:
           name: Show server logs before running tests
@@ -103,7 +102,7 @@ jobs:
           name: Print mock-user-auth server logs
           command: |
             echo "Server logs:"
-            cat server.log || true
+            cat server/server.log || true
 
 workflows:
   version: 2
