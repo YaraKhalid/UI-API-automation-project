@@ -66,22 +66,29 @@ jobs:
           name: Start mock-user-auth server
           command: |
             cd server
-            npm run dev &
+            nohup npm run dev > server.log 2>&1 &
+      - run:
+          name: Wait for server to start
+          command: |
             echo "Waiting for server to start..."
             for i in {1..15}; do
               sleep 2
-              curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/api/v1/users && break
+              STATUS=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/api/v1/users || true)
+              echo "Attempt $i: Status $STATUS"
+              if [ "$STATUS" != "000" ]; then
+                echo "Server is up."
+                break
+              fi
             done
-      - run:
-          name: Verify server is up
-          command: |
-            curl -I http://localhost:3000/api/v1/users && echo "Server is up" || echo "Server responded but access denied (expected for protected route)"
-
       - run:
           name: Run API tests
           command: |
             cd my-auth-API_tests
             BASE_URL=http://localhost:3000 npx mocha test/auth.test.js --reporter mochawesome
+      - run:
+          name: Print mock-user-auth server logs
+          command: |
+            cat server/server.log || true
 
 workflows:
   version: 2
