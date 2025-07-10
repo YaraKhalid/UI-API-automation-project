@@ -92,11 +92,11 @@ jobs:
       - run:
           name: Show server logs before running tests
           command: cat server/server.log || true
-            - run:
-                name: Run API tests
-                command: |
-                  cd my-auth-API_tests
-                  BASE_URL=http://localhost:3000 npx mocha test/auth.test.js --reporter mochawesome
+      - run:
+          name: Run API tests
+          command: |
+            cd my-auth-API_tests
+            BASE_URL=http://localhost:3000 npx mocha test/auth.test.js --reporter mochawesome
       - run:
           name: Print mock-user-auth server logs
           command: |
