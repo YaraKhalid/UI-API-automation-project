@@ -3,7 +3,7 @@ version: 2.1
 executors:
   node-executor:
     docker:
-      - image: cimg/node:11.15
+      - image: cimg/node:14.21
 
 jobs:
   ui-tests:
