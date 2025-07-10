@@ -75,8 +75,7 @@ jobs:
           name: Start mock-user-auth server
           command: |
             cd server
-            chmod +x scripts/dev.sh
-            npm run dev > server.log 2>&1 &
+            npx babel-node ./bin/www > server.log 2>&1 &
       - run:
           name: Wait for server to be ready
           command: |
