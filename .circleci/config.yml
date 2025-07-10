@@ -56,22 +56,26 @@ jobs:
           command: |
             cd my-auth-API_tests
             npm install
-
       - run:
-          name: Install mock-user-auth server locally
+          name: Clone and install mock-user-auth server
           command: |
-            npm install mock-user-auth
-
+            git clone https://github.com/thiagoluiznunes/mock-user-auth.git server
+            cd server
+            npm install
       - run:
           name: Start mock-user-auth server
           command: |
-            npx mock-user-auth --port 3000 &
+            cd server
+            npm run dev &
             echo "Waiting for server to start..."
             for i in {1..15}; do
               sleep 2
               curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/api/v1/users && break
             done
-    
+      - run:
+          name: Verify server is up
+          command: |
+            curl -I http://localhost:3000/api/v1/users || (echo "Server did not start" && exit 1)
       - run:
           name: Run API tests
           command: |
