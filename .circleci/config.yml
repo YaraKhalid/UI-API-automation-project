@@ -3,7 +3,7 @@ version: 2.1
 executors:
   node-executor:
     docker:
-      - image: cimg/node:20.10-browsers
+      - image: cimg/node:11.15
 
 jobs:
   ui-tests:
@@ -84,6 +84,9 @@ jobs:
                 echo "Server is up with status $STATUS."
                 break
               fi
+              echo "--- server/server.log output ---"
+              cat server/server.log || true
+              echo "--------------------------------"
               if [ "$i" -eq 15 ]; then
                 echo "Server did not start successfully."
                 exit 1
