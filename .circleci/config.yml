@@ -1,17 +1,13 @@
 version: 2.1
 
 executors:
-  ui-executor:
+  node-executor:
     docker:
-      - image: cimg/node:20.10-browsers # ✅ For MyStoreUI_Test & Chrome
-
-  api-executor:
-    docker:
-      - image: circleci/node:11.15 # ✅ For mock-user-auth (requires Node 11.x)
+      - image: cimg/node:20.10-browsers # ✅ Chrome & Chromedriver pre-installed
 
 jobs:
   ui-tests:
-    executor: ui-executor
+    executor: node-executor
     steps:
       - checkout
       - run:
@@ -52,7 +48,7 @@ jobs:
             npx nightwatch tests/contactUsTest.js --config nightwatch.conf.js
 
   api-tests:
-    executor: api-executor
+    executor: node-executor
     steps:
       - checkout
       - run:
@@ -67,48 +63,24 @@ jobs:
             cd server
             npm install
       - run:
-          name: Show available npm scripts in mock-user-auth
-          command: |
-            cd server
-            cat package.json
-      - run:
           name: Start mock-user-auth server
           command: |
             cd server
-            npx babel-node ./bin/www > server.log 2>&1 &
-      - run:
-          name: Wait for server to be ready
-          command: |
-            echo "Waiting for server to be ready..."
+            npm run dev &
+            echo "Waiting for server to start..."
             for i in {1..15}; do
-              STATUS=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/api/v1/users || true)
-              echo "Attempt $i: Status $STATUS"
-              if [ "$STATUS" = "200" ] || [ "$STATUS" = "403" ]; then
-                echo "Server is up with status $STATUS."
-                break
-              fi
-              echo "--- server/server.log output ---"
-              cat server/server.log || true
-              echo "--------------------------------"
-              if [ "$i" -eq 15 ]; then
-                echo "Server did not start successfully."
-                exit 1
-              fi
               sleep 2
+              curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/api/v1/users && break
             done
       - run:
-          name: Show server logs before running tests
-          command: cat server/server.log || true
+          name: Verify server is up
+          command: |
+            curl -I http://localhost:3000/api/v1/users || (echo "Server did not start" && exit 1)
       - run:
           name: Run API tests
           command: |
             cd my-auth-API_tests
             BASE_URL=http://localhost:3000 npx mocha test/auth.test.js --reporter mochawesome
-      - run:
-          name: Print mock-user-auth server logs
-          command: |
-            echo "Server logs:"
-            cat server/server.log || true
 
 workflows:
   version: 2
