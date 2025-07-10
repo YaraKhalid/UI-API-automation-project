@@ -68,11 +68,9 @@ jobs:
       - run:
           name: Start mock-user-auth server in background and run API tests
           command: |
-            # Start server in background, pipe logs to server.log
             cd server
-            nohup npm run dev > ../server.log 2>&1 &
+            nohup npm start > ../server.log 2>&1 &
             cd ..
-
             echo "Waiting for server to start..."
             for i in {1..15}; do
               sleep 2
@@ -88,7 +86,6 @@ jobs:
                 exit 1
               fi
             done
-
             # Run tests
             cd my-auth-API_tests
             BASE_URL=http://localhost:3000 npx mocha test/auth.test.js --reporter mochawesome
