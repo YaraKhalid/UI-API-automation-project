@@ -65,6 +65,11 @@ jobs:
             cd server
             npm install
       - run:
+          name: Show available npm scripts in mock-user-auth
+          command: |
+            cd server
+            cat package.json
+      - run:
           name: Start mock-user-auth server
           command: |
             cd server
