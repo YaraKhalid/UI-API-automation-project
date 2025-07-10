@@ -64,14 +64,20 @@ jobs:
             git clone https://github.com/thiagoluiznunes/mock-user-auth.git server
             cd server
             npm install
-
       - run:
-          name: Start mock-user-auth server in background
+          name: Kill any previous mock-user-auth processes
+          command: pkill -f "mock-user-auth" || true
+            - run:
+                name: Start mock-user-auth server in background
+                command: |
+                  cd server
+                  npm run dev &
+                  echo "Server started"
+      - run:
+          name: Start mock-user-auth server
           command: |
             cd server
-            npm run dev &
-            echo "Server started"
-
+            npm run start > server.log 2>&1 &
       - run:
           name: Wait for server to be ready
           command: |
@@ -89,13 +95,14 @@ jobs:
                 exit 1
               fi
             done
-
       - run:
-          name: Run API tests
-          command: |
-            cd my-auth-API_tests
-            BASE_URL=http://localhost:3000 npx mocha test/auth.test.js --reporter mochawesome
-
+          name: Show server logs before running tests
+          command: cat server/server.log || true
+            - run:
+                name: Run API tests
+                command: |
+                  cd my-auth-API_tests
+                  BASE_URL=http://localhost:3000 npx mocha test/auth.test.js --reporter mochawesome
       - run:
           name: Print mock-user-auth server logs
           command: |
