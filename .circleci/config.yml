@@ -1,13 +1,17 @@
 version: 2.1
 
 executors:
-  node-executor:
+  ui-executor:
     docker:
-      - image: cimg/node:14.21
+      - image: cimg/node:20.10-browsers # ✅ For MyStoreUI_Test & Chrome
+
+  api-executor:
+    docker:
+      - image: circleci/node:11.15 # ✅ For mock-user-auth (requires Node 11.x)
 
 jobs:
   ui-tests:
-    executor: node-executor
+    executor: ui-executor
     steps:
       - checkout
       - run:
@@ -48,7 +52,7 @@ jobs:
             npx nightwatch tests/contactUsTest.js --config nightwatch.conf.js
 
   api-tests:
-    executor: node-executor
+    executor: api-executor
     steps:
       - checkout
       - run:
