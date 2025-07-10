@@ -1,13 +1,13 @@
 version: 2.1
 
 executors:
-  ui-executor:
+  node-executor:
     docker:
-      - image: cimg/node:20.10-browsers # ✅ For MyStoreUI_Test & Chrome
+      - image: cimg/node:20.10-browsers # UI tests still need this
+  api-node-executor:
+    docker:
+      - image: circleci/node:11.15 # ➡️ This will run your API server & tests
 
-  api-executor:
-    docker:
-      - image: circleci/node:11.15
 jobs:
   ui-tests:
     executor: node-executor
