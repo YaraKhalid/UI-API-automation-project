@@ -65,7 +65,7 @@ jobs:
             git clone https://github.com/thiagoluiznunes/mock-user-auth.git server
             cd server
             npm install
-     - run:
+      - run:
           name: Start mock-user-auth server
           command: |
             cd server
