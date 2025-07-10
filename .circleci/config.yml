@@ -1,10 +1,13 @@
 version: 2.1
 
 executors:
-  node-executor:
+  ui-executor:
     docker:
-      - image: cimg/node:20.10-browsers # ✅ Chrome & Chromedriver pre-installed
+      - image: cimg/node:20.10-browsers # ✅ For MyStoreUI_Test & Chrome
 
+  api-executor:
+    docker:
+      - image: circleci/node:11.15
 jobs:
   ui-tests:
     executor: node-executor
